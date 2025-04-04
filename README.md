@@ -25,8 +25,9 @@ graph TD
     D --> F[Amadeus API]
     A --> G[Three.js Renderer]
 ```
+
+## 📂 Folder Structure
 ```
-.
 ├── ml-core/                # Machine Learning Models
 │   ├── price_prediction/   # LSTM implementation
 │   └── nlp_processing/     # Query understanding
