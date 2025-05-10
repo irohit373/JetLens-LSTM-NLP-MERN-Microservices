@@ -1,24 +1,51 @@
-
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
 import Head from 'next/head';
-import { Axios } from 'axios';
+import axios from 'axios';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Signup() {
+
+    const router = useRouter();
+
     const [user, setUser] = useState({
         username: '',
         email: '',
         password: ''
     });
 
-    const onSignup = async (e) => {
+    const [buttonDisabled, setButtonDisabled] = useState(false);
 
+    useEffect(() => {
+      if (user.username.length > 0 && user.email.length > 0 && user.password.length > 0) {
+        setButtonDisabled(false);
+      } else {
+        setButtonDisabled(true);
+      }
+    }, [user]);
+
+
+    const [loading, setLoading] = useState(false);
+
+
+    const onSignup = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.post('/api/users/signup', user)
+        // console.log("Signup Response", response);
+        toast.success("User Created Successfully");
+        router.push('/login');
+      } catch (error) {
+        console.log("SignUp Error", error);
+        toast.error(error.response.data.message);
+      }finally{
+        setLoading(false);
+      }
     }
-
+    const notify = () => toast('Here is your toast.');
   return (
     <div className="flex h-screen justify-center items-center bg-gradient-to-r from-blue-100 to-white">
       <Head>
@@ -26,7 +53,7 @@ export default function Signup() {
       </Head>
       <div className="bg-white p-8 rounded-md shadow-lg w-96">
         <div className="flex justify-start mb-4">
-          <h2 className="text-2xl font-bold text-blue-600">Jetlens</h2>
+          <h2 className="text-3xl font-bold text-blue-600"> {loading ? " Processing" : "JetLens" }</h2>
         </div>
         <h2 className="text-lg font-medium text-gray-600 mb-4">Create Your Account</h2>
         <form>
@@ -85,9 +112,10 @@ export default function Signup() {
             />
           </div>
           <button
-            type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            type="button"
+            className='w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
             onClick={onSignup}
+            disabled={buttonDisabled}
          >
             Signup
           </button>
@@ -97,6 +125,10 @@ export default function Signup() {
             </p>
             </Link>
         </form>
+            <button 
+            className="w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            onClick={notify}
+            >Make me a toast</button>
       </div>
     </div>
   );
