@@ -45,7 +45,7 @@ export default function Signup() {
         setLoading(false);
       }
     }
-    const notify = () => toast('Here is your toast.');
+    
   return (
     <div className="flex h-screen justify-center items-center bg-gradient-to-r from-blue-100 to-white">
       <Head>
@@ -125,10 +125,6 @@ export default function Signup() {
             </p>
             </Link>
         </form>
-            <button 
-            className="w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-            onClick={notify}
-            >Make me a toast</button>
       </div>
     </div>
   );
