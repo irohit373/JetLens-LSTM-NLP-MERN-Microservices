@@ -1,4 +1,5 @@
-export default function UserProfile({ params }) {
+export default async function UserProfile({ params }) {
+    const id =  params.id;
     return(
         <>
       <div className="flex h-screen justify-center items-center bg-gradient-to-r from-blue-100 to-white">
@@ -12,7 +13,7 @@ export default function UserProfile({ params }) {
           <h2 className="text-lg font-medium text-gray-600 mb-4">Your Profile</h2>
           {/* Profile content goes here */}
             <div className="mb-4">
-                <p className="text-gray-700">User ID: {params.id}</p>
+                <p className="text-gray-700">User ID: {id}</p>
         </div>
       </div>
       </div>

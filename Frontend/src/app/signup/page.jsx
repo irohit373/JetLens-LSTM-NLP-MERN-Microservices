@@ -32,6 +32,8 @@ export default function Signup() {
 
 
     const onSignup = async () => {
+      event.preventDefault();
+      
       try {
         setLoading(true);
         const response = await axios.post('/api/users/signup', user)
@@ -47,7 +49,7 @@ export default function Signup() {
     }
     
   return (
-    <div className="flex h-screen justify-center items-center bg-gradient-to-r from-blue-100 to-white">
+    <div className="flex h-screen justify-center items-center bg-gradient-to-r from-blue-400 to-white">
       <Head>
         <title>Signup - Jetlens</title>
       </Head>

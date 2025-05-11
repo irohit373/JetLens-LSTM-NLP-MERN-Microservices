@@ -1,39 +1,71 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
-import Head from 'next/head';
-import { Axios } from 'axios';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import Head from "next/head";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Login() {
-    const [user, setUser] = useState({
-        username: '',
-        password: ''
-    });
+  const router = useRouter();
 
-    const onLogin = async (e) => {
+  const [user, setUser] = useState({
+    username: "",
+    password: "",
+  });
 
+  const [buttonDisabled, setButtonDisabled] = useState(false);
+
+  useEffect(() => {
+    if (user.username.length > 0 && user.password.length > 0) {
+      setButtonDisabled(false);
+    } else {
+      setButtonDisabled(true);
     }
+  }, [user]);
+
+  const [loading, setLoading] = useState(false);
+
+  const onLogin = async () => {
+    event.preventDefault();
+    
+    try {
+      setLoading(true);
+      
+      const response = await axios.post("/api/users/login", user);
+      
+      toast.success("Login Successfully");
+      router.push("/profile");
+    } catch (err) {
+      console.log("Login Error", err);
+      toast.error("error logging in: ", err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
-    <div className="flex h-screen justify-center items-center bg-gradient-to-r from-blue-100 to-white">
+    <div className="flex h-screen justify-center items-center bg-gradient-to-r from-blue-400 to-white">
       <Head>
         <title>Login - Jetlens</title>
       </Head>
       <div className="bg-white p-8 rounded-md shadow-lg w-96">
         <div className="flex justify-start mb-4">
-          <h2 className="text-2xl font-bold text-blue-600">Jetlens</h2>
+          <h1 className="text-2xl font-bold text-blue-600">
+            {loading ? "Processing" : "Jetlens"}
+          </h1>
         </div>
-        <h2 className="text-lg font-medium text-gray-600 mb-4">Log into Your Account</h2>
+        <h2 className="text-lg font-medium text-gray-600 mb-4">
+          Log into Your Account
+        </h2>
         <form>
           <div className="mb-4">
             <label
               htmlFor="username"
               className="block text-sm font-medium text-gray-700"
             >
-              username
+              Username
             </label>
             {/* Username Input */}
             <input
@@ -43,7 +75,6 @@ export default function Login() {
               placeholder="Enter your username"
               value={user.username}
               onChange={(e) => setUser({ ...user, username: e.target.value })}
-
             />
           </div>
           <div className="mb-6">
@@ -60,22 +91,21 @@ export default function Login() {
               className="block w-full p-2 mt-1 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               placeholder="Enter your password"
               value={user.password}
-              onChange={(e) => setUser({ ...user, password : e.target.value })}
-
+              onChange={(e) => setUser({ ...user, password: e.target.value })}
             />
           </div>
           <button
-            type="submit"
             className="w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             onClick={onLogin}
-         >
+            disabled={buttonDisabled}
+          >
             Login
           </button>
           <Link href="/signup">
             <p className="text-sm text-blue-500 hover:text-blue-700 mt-4 text-center">
               Not Have an account? SignUp
             </p>
-            </Link>
+          </Link>
         </form>
       </div>
     </div>
