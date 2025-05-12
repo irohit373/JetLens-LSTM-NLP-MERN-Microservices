@@ -36,13 +36,23 @@ export default function Signup() {
       
       try {
         setLoading(true);
+        
+        console.log("Data Collected. Ready to Send Server");
+        
+        console.log("connecting to server");
         const response = await axios.post('/api/users/signup', user)
-        // console.log("Signup Response", response);
+
+        console.log("Signup Response", response);
         toast.success("User Created Successfully");
+        
+        console.log("redirecting to login");
         router.push('/login');
+
       } catch (error) {
+        
         console.log("SignUp Error", error);
         toast.error(error.response.data.message);
+      
       }finally{
         setLoading(false);
       }

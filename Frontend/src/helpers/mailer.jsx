@@ -2,10 +2,16 @@ import nodemailer from "nodemailer";
 import User from "@/models/userModel";
 import bcryptjs from "bcryptjs";
 
-export const sendEmail = async (email, emailType, userID) => {
+const sendEmail = async ({email, emailType}, userID) => {
     try {
+        console.log("Sending email to:", email);
+        console.log("Email type:", emailType);
+        console.log("User ID:", userID);
+
         const hashedToken = await bcryptjs.hash(userID.toString(), 10);
         
+        console.log("Hashed token:", hashedToken);
+
         if (emailType === "VERIFY") {
             await User.findByIdAndUpdate(userID, {
                 verifyToken: hashedToken,
@@ -32,12 +38,13 @@ export const sendEmail = async (email, emailType, userID) => {
             from: 'deshmukhrohit373@gmail.com',
             to: email,
             subject: emailType === "VERIFY" ? "Verify your account" : "Reset your password",
-            html: emailType === "VERIFY" ? 
-                `<p>Click <a href="${process.env.domain}/verify/${hashedToken}">here</a> to verify your account.</p>` : 
-                `<p>Click <a href="${process.env.domain}/reset/${hashedToken}">here</a> to reset your password.</p>`
+            html: emailType === "VERIFY" ?
+                `<p>Click <a href="${process.env.DOMAIN}/verifyemail?=${hashedToken}">here</a> to verify your account.</p>` :
+                `<p>Click <a href="${process.env.DOMAIN}/reset?=${hashedToken}">here</a> to reset your password.</p>`
         }
 
         const mailResponse = await transport.sendMail(mailOptions);
+        console.log("Email sent successfully:", mailResponse);
 
         return mailResponse;
 
@@ -45,3 +52,5 @@ export const sendEmail = async (email, emailType, userID) => {
         throw new Error("Error sending email : ", error.message);
     }
 }
+
+export default sendEmail;

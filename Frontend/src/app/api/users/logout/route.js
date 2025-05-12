@@ -11,7 +11,8 @@ export async function GET(){
             httpOnly: true,
             expires : new Date(0)
         });
-
+        console.log("Logout successful");
+        console.log("Cookie cleared");
         return response;
     } catch (error) {
         console.log(error);

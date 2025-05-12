@@ -1,24 +1,28 @@
 "use client";
 
-import React, { useState } from "react";
-import Head from "next/head";
-import toast from "react-hot-toast";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import axios from "axios";
+import Head from "next/head";
 import Link from "next/link";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function ProfilePage() {
   
   const [data, setData] = useState();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   // Logout function
   const logout = async () => {
     try {
+      console.log("Logging out...");
       await axios.get("api/users/logout");
+
       console.log("Logout successful");
       toast.success("Logout successful");
+      
+      console.log("Redirecting to login page");
       router.push("/login");
     } catch (error) {
       console.error("Logout error:", error);
@@ -29,15 +33,24 @@ export default function ProfilePage() {
   // Fetch user data
   const getUser = async () => {
     try {
+      console.log("Fetching user data...");
       const response = await axios.get("/api/users/customer");
+
       console.log(response.data);
       setData(response.data.data._id);
       toast.success("User data fetched successfully");
+
     } catch (error) {
+
       console.error("Error fetching user data:", error);
       toast.error("Failed to fetch user data");
     }
-  };
+  }
+
+  useEffect(() => {
+    getUser();
+  }, []);
+
 
   return (
     <div className="flex h-screen justify-center items-center bg-gradient-to-r from-blue-400 to-white">
@@ -54,12 +67,6 @@ export default function ProfilePage() {
         {/* Logout Button Goes here */}
         <button
           className="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
-          onClick={getUser}
-        >
-          Get Data
-        </button>
-        <button
-          className="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
           onClick={logout}
         >
           Logout
@@ -69,3 +76,4 @@ export default function ProfilePage() {
     </div>
   );
 }
+

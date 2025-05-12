@@ -33,13 +33,20 @@ export default function Login() {
     try {
       setLoading(true);
       
+      console.log("Data Collected. Ready to Send Server");
+      console.log("connecting to server");
+
       const response = await axios.post("/api/users/login", user);
       
       toast.success("Login Successfully");
-      router.push("/profile");
+      console.log("Login Response", response);
+
+      console.log("redirecting to home");
+      router.push("/");
+      
     } catch (err) {
       console.log("Login Error", err);
-      toast.error("error logging in: ", err);
+      toast.error("error logging in: ", err.response.data);
     } finally {
       setLoading(false);
     }
