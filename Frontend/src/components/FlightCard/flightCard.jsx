@@ -60,6 +60,18 @@ const FlightCard = ({ itinerary, legs, places, carriers, agents }) => {
     if (score >= 5) return "bg-yellow-100 text-yellow-800";
     return "bg-red-100 text-red-800";
   };
+
+  // Handle click on the Details button to redirect to the agent page via Skyscanner
+  const handleDetailsClick = () => {
+    // Use the URL from the first items array instead of agent_url
+    const agentPath = itinerary.pricing_options?.[0]?.items?.[0]?.url;
+    if (agentPath) {
+      const finalUrl = `https://www.skyscanner.net${agentPath}`;
+      window.open(finalUrl, '_blank'); // Opens in a new tab.
+    } else {
+      alert("No booking details available for this agent.");
+    }
+  };
   
   return (
     <div className="w-3xl bg-white border border-gray-200 rounded-xl p-5 mb-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
@@ -159,7 +171,10 @@ const FlightCard = ({ itinerary, legs, places, carriers, agents }) => {
           </div>
         </div>
         
-        <button className="bg-blue-600 text-white py-2 px-6 rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors">
+        <button 
+          onClick={handleDetailsClick}
+          className="bg-blue-600 text-white py-2 px-6 rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors"
+        >
           Details
         </button>
       </div>
