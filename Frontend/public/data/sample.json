@@ -1,0 +1,265 @@
+{
+  "itineraries": [
+    {
+      "id": "itinerary-1",
+      "leg_ids": ["leg-1"],
+      "pricing_options": [
+        {
+          "id": "price-opt-1",
+          "agent_ids": ["agent-1"],
+          "price": {
+            "amount": 13811.83,
+            "update_status": "current",
+            "last_updated": "2025-05-14T05:47:40"
+          },
+          "items": [
+            {
+              "agent_id": "agent-1",
+              "url": "https://booking.example.com/flight/itinerary-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itinerary-2",
+      "leg_ids": ["leg-2"],
+      "pricing_options": [
+        {
+          "id": "price-opt-2",
+          "agent_ids": ["agent-2"],
+          "price": {
+            "amount": 15369.22,
+            "update_status": "current",
+            "last_updated": "2025-05-14T05:47:40"
+          },
+          "items": [
+            {
+              "agent_id": "agent-2",
+              "url": "https://booking.example.com/flight/itinerary-2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itinerary-3",
+      "leg_ids": ["leg-3"],
+      "pricing_options": [
+        {
+          "id": "price-opt-3",
+          "agent_ids": ["agent-3"],
+          "price": {
+            "amount": 16119.77,
+            "update_status": "current",
+            "last_updated": "2025-05-14T05:47:49"
+          },
+          "items": [
+            {
+              "agent_id": "agent-3",
+              "url": "https://booking.example.com/flight/itinerary-3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itinerary-4",
+      "leg_ids": ["leg-4"],
+      "pricing_options": [
+        {
+          "id": "price-opt-4",
+          "agent_ids": ["agent-4"],
+          "price": {
+            "amount": 11001.53,
+            "update_status": "current",
+            "last_updated": "2025-05-14T05:47:56"
+          },
+          "items": [
+            {
+              "agent_id": "agent-4",
+              "url": "https://booking.example.com/flight/itinerary-4"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legs": [
+    {
+      "id": "leg-1",
+      "segment_ids": ["segment-1", "segment-2"],
+      "origin_place_id": "place-1",
+      "destination_place_id": "place-3",
+      "duration": 180
+    },
+    {
+      "id": "leg-2",
+      "segment_ids": ["segment-3", "segment-4"],
+      "origin_place_id": "place-1",
+      "destination_place_id": "place-4",
+      "duration": 190
+    },
+    {
+      "id": "leg-3",
+      "segment_ids": ["segment-5", "segment-6"],
+      "origin_place_id": "place-2",
+      "destination_place_id": "place-5",
+      "duration": 210
+    },
+    {
+      "id": "leg-4",
+      "segment_ids": ["segment-7"],
+      "origin_place_id": "place-1",
+      "destination_place_id": "place-6",
+      "duration": 120
+    }
+  ],
+  "segments": [
+    {
+      "id": "segment-1",
+      "origin_place_id": "place-1",
+      "destination_place_id": "place-2",
+      "departure_time": "2025-05-16T12:45:00",
+      "arrival_time": "2025-05-16T14:20:00",
+      "duration": 95,
+      "carrier_id": "carrier-1"
+    },
+    {
+      "id": "segment-2",
+      "origin_place_id": "place-2",
+      "destination_place_id": "place-3",
+      "departure_time": "2025-05-16T16:00:00",
+      "arrival_time": "2025-05-16T17:35:00",
+      "duration": 95,
+      "carrier_id": "carrier-1"
+    },
+    {
+      "id": "segment-3",
+      "origin_place_id": "place-1",
+      "destination_place_id": "place-7",
+      "departure_time": "2025-05-16T13:00:00",
+      "arrival_time": "2025-05-16T14:40:00",
+      "duration": 100,
+      "carrier_id": "carrier-2"
+    },
+    {
+      "id": "segment-4",
+      "origin_place_id": "place-7",
+      "destination_place_id": "place-4",
+      "departure_time": "2025-05-16T15:30:00",
+      "arrival_time": "2025-05-16T16:30:00",
+      "duration": 90,
+      "carrier_id": "carrier-2"
+    },
+    {
+      "id": "segment-5",
+      "origin_place_id": "place-2",
+      "destination_place_id": "place-8",
+      "departure_time": "2025-05-16T10:00:00",
+      "arrival_time": "2025-05-16T12:30:00",
+      "duration": 150,
+      "carrier_id": "carrier-3"
+    },
+    {
+      "id": "segment-6",
+      "origin_place_id": "place-8",
+      "destination_place_id": "place-5",
+      "departure_time": "2025-05-16T13:30:00",
+      "arrival_time": "2025-05-16T15:00:00",
+      "duration": 90,
+      "carrier_id": "carrier-3"
+    },
+    {
+      "id": "segment-7",
+      "origin_place_id": "place-1",
+      "destination_place_id": "place-6",
+      "departure_time": "2025-05-16T09:00:00",
+      "arrival_time": "2025-05-16T11:00:00",
+      "duration": 120,
+      "carrier_id": "carrier-4"
+    }
+  ],
+  "places": [
+    {
+      "id": "place-1",
+      "name": "City A Airport",
+      "code": "CTA"
+    },
+    {
+      "id": "place-2",
+      "name": "City B Airport",
+      "code": "CTB"
+    },
+    {
+      "id": "place-3",
+      "name": "City C Airport",
+      "code": "CTC"
+    },
+    {
+      "id": "place-4",
+      "name": "City D Airport",
+      "code": "CTD"
+    },
+    {
+      "id": "place-5",
+      "name": "City E Airport",
+      "code": "CTE"
+    },
+    {
+      "id": "place-6",
+      "name": "City F Airport",
+      "code": "CTF"
+    },
+    {
+      "id": "place-7",
+      "name": "City G Airport",
+      "code": "CTG"
+    },
+    {
+      "id": "place-8",
+      "name": "City H Airport",
+      "code": "CTH"
+    }
+  ],
+  "carriers": [
+    {
+      "id": "carrier-1",
+      "name": "Example Air"
+    },
+    {
+      "id": "carrier-2",
+      "name": "FlyFast Airlines"
+    },
+    {
+      "id": "carrier-3",
+      "name": "SkyHigh Airways"
+    },
+    {
+      "id": "carrier-4",
+      "name": "JetSpeed"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent-1",
+      "name": "Best Travel Agency",
+      "url": "https://booking.example.com/flight/itinerary-1"
+    },
+    {
+      "id": "agent-2",
+      "name": "Super Flights",
+      "url": "https://booking.example.com/flight/itinerary-2"
+    },
+    {
+      "id": "agent-3",
+      "name": "FlyAway",
+      "url": "https://booking.example.com/flight/itinerary-3"
+    },
+    {
+      "id": "agent-4",
+      "name": "TravelNow",
+      "url": "https://booking.example.com/flight/itinerary-4"
+    }
+  ]
+}
