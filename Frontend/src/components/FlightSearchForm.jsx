@@ -3,14 +3,9 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { ChevronUpDownIcon, GlobeAltIcon, CalendarIcon, UserGroupIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import { useDebounce } from '@/hooks/useDebounce';
 import { SearchCombobox } from '@/components/SearchCombobox';
-// Added for API Calls
-
 import axios from 'axios';
-import { useRouter } from 'next/navigation';
 
-
-export const FlightSearchForm = ({ initialAirports = [] }) => {
-  const router = useRouter();
+export const FlightSearchForm = ({ onSearch, initialAirports = [] }) => {
   const [fromQuery, setFromQuery] = useState('');
   const [toQuery, setToQuery] = useState('');
   const [selectedFrom, setSelectedFrom] = useState(null);
@@ -19,39 +14,35 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
   const [travelers, setTravelers] = useState(1);
   const [airports, setAirports] = useState(initialAirports);
   const [isLoading, setIsLoading] = useState(false);
-  const [isSearching, setIsSearching] = useState(false); // Add this state for tracking API calls
-  const [searchResults, setSearchResults] = useState(null); // Add this state to store results
-
+  const [isSearching, setIsSearching] = useState(false);
 
   const debouncedFromQuery = useDebounce(fromQuery, 300);
   const debouncedToQuery = useDebounce(toQuery, 300);
- 
+
   const filteredFromAirports = useMemo(() => {
     if (!debouncedFromQuery) return [];
     const searchTerm = debouncedFromQuery.toLowerCase();
-    return airports.filter(airport => 
+    return airports.filter((airport) =>
       airport.searchIndex.includes(searchTerm)
-    )
-     .slice(0, 100);
+    ).slice(0, 100);
   }, [debouncedFromQuery, airports]);
 
   const filteredToAirports = useMemo(() => {
     if (!debouncedToQuery) return [];
     const searchTerm = debouncedToQuery.toLowerCase();
-    return airports.filter(airport => 
+    return airports.filter((airport) =>
       airport.searchIndex.includes(searchTerm)
-    )
-     .slice(0, 100);
+    ).slice(0, 100);
   }, [debouncedToQuery, airports]);
 
   const loadAirports = useCallback(async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('/data/airports.json');
-      const data = await response.json();
-      setAirports(data.map(airport => ({
+      const response = await axios.get('/data/airports.json');
+      const data = response.data;
+      setAirports(data.map((airport) => ({
         ...airport,
-        searchIndex: `${airport.city} ${airport.name} ${airport.code}`.toLowerCase()
+        searchIndex: `${airport.city} ${airport.name} ${airport.code}`.toLowerCase(),
       })));
     } catch (error) {
       console.error('Error loading airports:', error);
@@ -67,7 +58,7 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
   const handleSearch = async (e) => {
     e.preventDefault();
 
-    if (!fromQuery || !toQuery || !departureDate) {
+    if (!selectedFrom || !selectedTo || !departureDate) {
       alert('Please fill in all required fields');
       return;
     }
@@ -75,20 +66,18 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
     setIsSearching(true);
 
     try {
+      const response = await axios.get('/api/flights', {
+        params: {
+          from: selectedFrom.code, // Use the airport code
+          to: selectedTo.code,     // Use the airport code
+          date: departureDate,
+          travelers,
+        },
+      });
 
-      const response = await fetch(
-        `/api/flights?from=${fromQuery}&to=${toQuery}&date=${departureDate}&travelers=${travelers}`
-      );
-      console.log(response);
-      if (!response.ok) {
-        throw new Error('Failed to fetch flight data');
-      }
-
-      const data = await response.json();
-      console.log('Flight data fetched:', data);
-
+      console.log("Flight Data Send Successfully and Query Started on Server.");
       // Pass search parameters to the parent component
-      onSearch({ from: fromQuery, to: toQuery, date: departureDate });
+      onSearch({ from: selectedFrom.code, to: selectedTo.code, date: departureDate });
     } catch (error) {
       console.error('Error searching for flights:', error);
     } finally {
@@ -97,7 +86,7 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
   };
 
   return (
-    <div className=" bg-white/40 backdrop-blur-sm rounded-2xl py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white/40 backdrop-blur-sm rounded-2xl py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -138,21 +127,13 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
                 <CalendarIcon className="w-5 h-5 mr-2 text-blue-600" />
                 Departure
               </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <CalendarIcon className="h-5 w-5 text-gray-400" />
-                </div>
-                <input
-                  type="date"
-                  value={departureDate}
-                  onChange={(e) => setDepartureDate(e.target.value)}
-                  className="block w-full pl-10 pr-3 py-3 border-none bg-gray-50/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:bg-white appearance-none date-picker-custom"
-                  min={new Date().toISOString().split('T')[0]}
-                />
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <ChevronUpDownIcon className="h-5 w-5 text-gray-400" />
-                </div>
-              </div>
+              <input
+                type="date"
+                value={departureDate}
+                onChange={(e) => setDepartureDate(e.target.value)}
+                className="block w-full pl-10 pr-3 py-3 border-none bg-gray-50/50 rounded-lg focus:ring-2 focus:ring-blue-500 focus:bg-white appearance-none"
+                min={new Date().toISOString().split('T')[0]}
+              />
             </div>
 
             {/* Travelers */}
@@ -161,11 +142,11 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
                 <UserGroupIcon className="w-5 h-5 mr-2 text-blue-600" />
                 Travelers
               </label>
-              <div className="flex items-center bg-gray-50/50 rounded-lg px-3 focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-500 transition-all">
+              <div className="flex items-center bg-gray-50/50 rounded-lg px-3">
                 <button
                   type="button"
                   onClick={() => setTravelers(Math.max(1, travelers - 1))}
-                  className="p-2 text-gray-500 hover:text-blue-600 transition-colors"
+                  className="p-2 text-gray-500 hover:text-blue-600"
                 >
                   -
                 </button>
@@ -173,12 +154,12 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
                   type="number"
                   value={travelers}
                   readOnly
-                  className="w-full py-3 text-center bg-transparent focus:outline-none"
+                  className="w-full py-3 text-center bg-transparent"
                 />
                 <button
                   type="button"
                   onClick={() => setTravelers(travelers + 1)}
-                  className="p-2 text-gray-500 hover:text-blue-600 transition-colors"
+                  className="p-2 text-gray-500 hover:text-blue-600"
                 >
                   +
                 </button>
@@ -190,14 +171,14 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
             type="button"
             onClick={handleSearch}
             disabled={isSearching}
-            className={`mt-8 w-full bg-gradient-to-r from-blue-600 to-sky-600 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-lg transition-all flex items-center justify-center ${isSearching ? 'opacity-70 cursor-not-allowed' : ''}`}
+            className={`mt-8 w-full bg-gradient-to-r from-blue-600 to-sky-600 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-lg transition-all flex items-center justify-center ${
+              isSearching ? 'opacity-70 cursor-not-allowed' : ''
+            }`}
           >
-             {isSearching ? 'Searching...' : 'Search Flights'}
-          {!isSearching && <ArrowRightIcon className="w-5 h-5 ml-2" />}
+            {isSearching ? 'Searching...' : 'Search Flights'}
+            {!isSearching && <ArrowRightIcon className="w-5 h-5 ml-2" />}
           </button>
         </form>
-
-        {/* Loading indicatior adding */}
       </div>
     </div>
   );

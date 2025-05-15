@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import FlightCard from '@/components/FlightCard/flightCard';
+import axios from 'axios';
 
 const Flights = ({ from, to, date }) => {
   const [flightData, setFlightData] = useState(null);
@@ -9,12 +10,11 @@ const Flights = ({ from, to, date }) => {
   useEffect(() => {
     const fetchFlightData = async () => {
       try {
-        const response = await fetch(`/api/flights?from=${from}&to=${to}&date=${date}`);
-        if (!response.ok) {
-          throw new Error('No flight data found');
-        }
-        const { flightData } = await response.json();
-        setFlightData(flightData);
+        const response = await axios.get('/api/flights', {
+          params: { from, to, date },
+        });
+
+        setFlightData(response.data.flightData);
       } catch (error) {
         console.error('Error loading flight data:', error);
         setFlightData(null);
@@ -44,7 +44,7 @@ const Flights = ({ from, to, date }) => {
     <div>
       <h1 className="text-2xl font-bold mb-4">Available Flights</h1>
       {itineraries.map((itinerary) => (
-        <FlightCard 
+        <FlightCard
           key={itinerary.id}
           itinerary={itinerary}
           legs={legs}
