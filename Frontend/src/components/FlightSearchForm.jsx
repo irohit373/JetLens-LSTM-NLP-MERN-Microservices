@@ -3,8 +3,14 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { ChevronUpDownIcon, GlobeAltIcon, CalendarIcon, UserGroupIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import { useDebounce } from '@/hooks/useDebounce';
 import { SearchCombobox } from '@/components/SearchCombobox';
+// Added for API Calls
+
+import axios from 'axios';
+import { useRouter } from 'next/navigation';
+
 
 export const FlightSearchForm = ({ initialAirports = [] }) => {
+  const router = useRouter();
   const [fromQuery, setFromQuery] = useState('');
   const [toQuery, setToQuery] = useState('');
   const [selectedFrom, setSelectedFrom] = useState(null);
@@ -13,6 +19,9 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
   const [travelers, setTravelers] = useState(1);
   const [airports, setAirports] = useState(initialAirports);
   const [isLoading, setIsLoading] = useState(false);
+  const [isSearching, setIsSearching] = useState(false); // Add this state for tracking API calls
+  const [searchResults, setSearchResults] = useState(null); // Add this state to store results
+
 
   const debouncedFromQuery = useDebounce(fromQuery, 300);
   const debouncedToQuery = useDebounce(toQuery, 300);
@@ -55,14 +64,35 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
     loadAirports();
   }, [loadAirports]);
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log({
-      from: selectedFrom,
-      to: selectedTo,
-      date: departureDate,
-      travelers
-    });
+  const handleSearch = async (e) => {
+   e.preventDefault();
+
+    if (!fromQuery || !toQuery || !departureDate) {
+      alert('Please fill in all required fields');
+      return;
+    }
+
+    setIsSearching(true);
+
+    try {
+      const response = await fetch(
+        `/api/flights?from=${fromQuery}&to=${toQuery}&date=${departureDate}&travelers=${travelers}`
+      );
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch flight data');
+      }
+
+      const data = await response.json();
+      console.log('Flight data fetched:', data);
+
+      // Optionally, reload the page to refresh the Flights component
+      // window.location.reload();
+    } catch (error) {
+      console.error('Error searching for flights:', error);
+    } finally {
+      setIsSearching(false);
+    }
   };
 
   return (
@@ -77,7 +107,7 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
           </p>
         </div>
 
-        <form onSubmit={handleSearch} className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-white/20">
+        <form className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-white/20">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <SearchCombobox
               airports={filteredFromAirports}
@@ -156,13 +186,17 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
           </div>
 
           <button
-            type="submit"
-            className="mt-8 w-full bg-gradient-to-r from-blue-600 to-sky-600 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-lg transition-all flex items-center justify-center"
+            type="button"
+            onClick={handleSearch}
+            disabled={isSearching}
+            className={`mt-8 w-full bg-gradient-to-r from-blue-600 to-sky-600 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-lg transition-all flex items-center justify-center ${isSearching ? 'opacity-70 cursor-not-allowed' : ''}`}
           >
-            Search Flights
-            <ArrowRightIcon className="w-5 h-5 ml-2" />
+             {isSearching ? 'Searching...' : 'Search Flights'}
+          {!isSearching && <ArrowRightIcon className="w-5 h-5 ml-2" />}
           </button>
         </form>
+
+        {/* Loading indicatior adding */}
       </div>
     </div>
   );

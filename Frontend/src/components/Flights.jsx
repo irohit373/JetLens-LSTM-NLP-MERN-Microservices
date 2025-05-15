@@ -1,32 +1,66 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { Card1 } from "@/components/Card1";
+'use client';
+import React, { useState, useEffect } from 'react';
+import FlightCard from '@/components/FlightCard/flightCard';
 
 const Flights = () => {
-  return (
-    <div className="flex flex-col items-center bg-gradient-to-r from-blue-400 to-amber-50 py-10">
-      <div className="bg-white/40 backdrop-blur-sm rounded-2xl w-3xl py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Perfect Flight's For You
-            </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              flights across thousands of Providers worldwide.
-            </p>
-          </div>
+  const [flightData, setFlightData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-          <Card1 />
-          <Card1 />
-          <Card1 />
-          <Card1 />
-          <Card1 />
-          <Card1 />
-          <Card1 />
-          <Card1 />
-          <Card1 />
-        </div>
-      </div>
+  useEffect(() => {
+    const fetchFlightData = async () => {
+      try {
+        const response = await fetch('/data/sampleApiResponse.json');
+        if (!response.ok) {
+          throw new Error('No flight data found');
+        }
+        const data = await response.json();
+        setFlightData(data);
+      } catch (error) {
+        console.error('Error loading flight data:', error);
+        setFlightData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFlightData();
+  }, []);
+
+  if (loading) {
+    return <div className="text-center">Loading flight data...</div>;
+  }
+
+  if (!flightData) {
+    return <div className="text-center text-red-500">No flight data available.</div>;
+  }
+
+  const { itineraries, legs, places, carriers, agents } = flightData;
+
+  if (!itineraries || !legs || !places || !carriers) {
+    return <div className="text-center text-red-500">Invalid flight data structure.</div>;
+  }
+
+  return (
+    <div>
+      <h1 className="text-2xl font-bold mb-4">Available Flights</h1>
+      {itineraries.map((itinerary) => (
+        <FlightCard 
+          key={itinerary.id}
+          itinerary={itinerary}
+          legs={legs}
+          places={places}
+          carriers={carriers}
+          agents={agents || []}
+        />
+      ))}
+      
+      {/* Optional debugging info - you may want to remove in production */}
+      <details className="mt-6">
+        <summary className="cursor-pointer text-blue-600">Debug Raw Data</summary>
+        <pre className="bg-gray-100 p-4 rounded mt-2 text-xs overflow-auto max-h-96">
+          {JSON.stringify(flightData, null, 2)}
+        </pre>
+      </details>
     </div>
   );
 };
