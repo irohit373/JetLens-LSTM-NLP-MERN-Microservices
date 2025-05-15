@@ -2,19 +2,19 @@
 import React, { useState, useEffect } from 'react';
 import FlightCard from '@/components/FlightCard/flightCard';
 
-const Flights = () => {
+const Flights = ({ from, to, date }) => {
   const [flightData, setFlightData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchFlightData = async () => {
       try {
-        const response = await fetch('/data/sampleApiResponse.json');
+        const response = await fetch(`/api/flights?from=${from}&to=${to}&date=${date}`);
         if (!response.ok) {
           throw new Error('No flight data found');
         }
-        const data = await response.json();
-        setFlightData(data);
+        const { flightData } = await response.json();
+        setFlightData(flightData);
       } catch (error) {
         console.error('Error loading flight data:', error);
         setFlightData(null);
@@ -24,7 +24,7 @@ const Flights = () => {
     };
 
     fetchFlightData();
-  }, []);
+  }, [from, to, date]);
 
   if (loading) {
     return <div className="text-center">Loading flight data...</div>;
@@ -53,14 +53,6 @@ const Flights = () => {
           agents={agents || []}
         />
       ))}
-      
-      {/* Optional debugging info - you may want to remove in production */}
-      <details className="mt-6">
-        <summary className="cursor-pointer text-blue-600">Debug Raw Data</summary>
-        <pre className="bg-gray-100 p-4 rounded mt-2 text-xs overflow-auto max-h-96">
-          {JSON.stringify(flightData, null, 2)}
-        </pre>
-      </details>
     </div>
   );
 };

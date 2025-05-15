@@ -65,7 +65,7 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
   }, [loadAirports]);
 
   const handleSearch = async (e) => {
-   e.preventDefault();
+    e.preventDefault();
 
     if (!fromQuery || !toQuery || !departureDate) {
       alert('Please fill in all required fields');
@@ -75,10 +75,11 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
     setIsSearching(true);
 
     try {
+
       const response = await fetch(
         `/api/flights?from=${fromQuery}&to=${toQuery}&date=${departureDate}&travelers=${travelers}`
       );
-
+      console.log(response);
       if (!response.ok) {
         throw new Error('Failed to fetch flight data');
       }
@@ -86,8 +87,8 @@ export const FlightSearchForm = ({ initialAirports = [] }) => {
       const data = await response.json();
       console.log('Flight data fetched:', data);
 
-      // Optionally, reload the page to refresh the Flights component
-      // window.location.reload();
+      // Pass search parameters to the parent component
+      onSearch({ from: fromQuery, to: toQuery, date: departureDate });
     } catch (error) {
       console.error('Error searching for flights:', error);
     } finally {

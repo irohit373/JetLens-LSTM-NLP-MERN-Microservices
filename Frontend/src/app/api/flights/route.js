@@ -16,6 +16,15 @@ export async function GET(request) {
     );
   }
 
+  const fileName = `${from}-${to}-${date}.json`;
+  const filePath = path.join(process.cwd(), "public", "data", fileName);
+
+  // Check if the file already exists
+  if (fs.existsSync(filePath)) {
+    const flightData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+    return NextResponse.json({ flightData });
+  }
+
   try {
     // Fetch flight data from the external API
     const apiUrl = `https://api.flightapi.io/onewaytrip/myapi/${from}/${to}/${date}/${travelers}/0/0/Economy/INR`;
@@ -28,10 +37,9 @@ export async function GET(request) {
     const flightData = await response.json();
 
     // Save the response to a JSON file in the public/data folder
-    const filePath = path.join(process.cwd(), "public", "data", "flights.json");
     fs.writeFileSync(filePath, JSON.stringify(flightData, null, 2));
 
-    return NextResponse.json({ message: "Flight data saved successfully", flightData });
+    return NextResponse.json({ flightData });
   } catch (error) {
     console.error("Error fetching flight data:", error);
     return NextResponse.json(
