@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import { FlightSearchForm } from "@/components/FlightSearchForm";
 import Flights from "@/components/Flights";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [searchParams, setSearchParams] = useState(null);
@@ -27,6 +28,8 @@ export default function Home() {
           />
         )}
       </div>
+      <Footer />
+
     </div>
   );
 }
