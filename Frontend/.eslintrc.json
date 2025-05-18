@@ -1,0 +1,13 @@
+{
+  "extends": "next/core-web-vitals",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_|^[A-Z]" }],
+    "react-hooks/exhaustive-deps": "warn",
+    "react-refresh/only-export-components": "warn"
+  }
+}

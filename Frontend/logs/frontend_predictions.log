@@ -3545,3 +3545,212 @@
 [2025-05-18T11:16:22.585Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-HYD | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
 [2025-05-18T11:16:22.676Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-HYD | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
 [2025-05-18T11:16:22.811Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-HYD | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:49.988Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 2 | Price: 9600 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.051Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.094Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.153Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.539Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.582Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.590Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.804Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.902Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.908Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.916Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:50.956Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.010Z] FALLBACK_PREDICTION | Airline: Etihad Airways | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.022Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.050Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.059Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.071Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.104Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.154Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.182Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.209Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.222Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.227Z] FALLBACK_PREDICTION | Airline: Etihad Airways | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.262Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.332Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.349Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.381Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.399Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.409Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.454Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.512Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.526Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.593Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.711Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:51.823Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.032Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.256Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.268Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.299Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.361Z] FALLBACK_PREDICTION | Airline: Air India Express | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.376Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.593Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.710Z] FALLBACK_PREDICTION | Airline: Akasa Air | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.722Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.759Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.794Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.822Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.904Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:52.972Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.003Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.036Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.044Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.058Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.119Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.172Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.191Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.251Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.261Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.336Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.408Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.422Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.455Z] FALLBACK_PREDICTION | Airline: Air India Express | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.471Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.478Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.527Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.585Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.593Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.622Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.637Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.658Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.705Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.757Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.763Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.790Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 2 | Price: 9600 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.802Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.811Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.867Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.972Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:53.985Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.024Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.043Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.060Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.133Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.191Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.205Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.238Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.245Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.268Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.307Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.360Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.372Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.395Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.410Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.419Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.492Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 2 | Price: 9600 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.539Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.556Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.592Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.604Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.615Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.656Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.789Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.805Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.873Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.926Z] FALLBACK_PREDICTION | Airline: Air India Express | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:54.942Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.025Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.101Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.109Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.135Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.142Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.159Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.206Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.266Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.277Z] FALLBACK_PREDICTION | Airline: Oman Air | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.320Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.336Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.358Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.470Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.560Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.576Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.610Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.621Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.636Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.684Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.774Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.789Z] FALLBACK_PREDICTION | Airline: Etihad Airways | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.837Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.859Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.873Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.920Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 2 | Price: 9600 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.972Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:55.985Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.027Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.039Z] FALLBACK_PREDICTION | Airline: Etihad Airways | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.058Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.108Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.201Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.210Z] FALLBACK_PREDICTION | Airline: Etihad Airways | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.273Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.287Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.306Z] FALLBACK_PREDICTION | Airline: Air India Express | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.388Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.454Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.476Z] FALLBACK_PREDICTION | Airline: Air India Express | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.504Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.521Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.537Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.579Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.657Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 2 | Price: 8000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.671Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.694Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.707Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.722Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.769Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.828Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.839Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.859Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.877Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.887Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:56.927Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.001Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.020Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.041Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.055Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.071Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.136Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.269Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.303Z] FALLBACK_PREDICTION | Airline: Etihad Airways | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.319Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.331Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.338Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.378Z] FALLBACK_PREDICTION | Airline: Akasa Air | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.426Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.440Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.468Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.475Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.487Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 2 | Price: 9600 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.541Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.591Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.604Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.626Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.639Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.645Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.683Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.726Z] FALLBACK_PREDICTION | Airline: SpiceJet | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.740Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.768Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.776Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.790Z] FALLBACK_PREDICTION | Airline: Akasa Air | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.840Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.909Z] FALLBACK_PREDICTION | Airline: Air India Express | Route: DEL-BOM | Stops: 0 | Price: 5000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.919Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.939Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.951Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.959Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:57.999Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.049Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.056Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.084Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.094Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.102Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.150Z] FALLBACK_PREDICTION | Airline: IndiGo | Route: DEL-BOM | Stops: 1 | Price: 6500 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.190Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.201Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.221Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.233Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.239Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 0 | Price: 6000 | Error: connect ECONNREFUSED 127.0.0.1:5000
+[2025-05-18T12:29:58.261Z] FALLBACK_PREDICTION | Airline: Air India | Route: DEL-BOM | Stops: 1 | Price: 7800 | Error: connect ECONNREFUSED 127.0.0.1:5000
