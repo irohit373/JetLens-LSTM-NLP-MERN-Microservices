@@ -16,7 +16,7 @@ REM Wait for ML API to initialize
 timeout /t 5 /nobreak > NUL
 
 echo Starting Next.js frontend on port 3000...
-start cmd /K "cd /d %FRONTEND_DIR% && npm run dev"
+start cmd /K "cd /d %FRONTEND_DIR% && npm start"
 
 echo.
 echo Services are starting:
