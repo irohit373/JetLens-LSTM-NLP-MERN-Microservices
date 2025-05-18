@@ -1,0 +1,2727 @@
+{
+  "query": {
+    "market": "US",
+    "currency": "INR",
+    "locale": "en-GB",
+    "adults": 1,
+    "child_ages": [],
+    "cabin_class": "economy",
+    "legs": [
+      {
+        "origin": 9900,
+        "alternative_origins": [],
+        "destination": 10075,
+        "alternative_destinations": [],
+        "date": "2025-05-30"
+      }
+    ],
+    "children": 0,
+    "infants": 0
+  },
+  "context": {
+    "request_id": "",
+    "session_id": "66b1b4fe-3c9b-45fe-9d74-a590ea72d97c"
+  },
+  "itineraries": [
+    {
+      "id": "9900-2505301640--32672-1-10075-2505302305",
+      "leg_ids": [
+        "9900-2505301640--32672-1-10075-2505302305"
+      ],
+      "pricing_options": [
+        {
+          "id": "MgTMeN9v0iqX",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 11660.64,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|434|9900|2025-05-30T16:40|10957|2025-05-30T18:10|90|SU1YXRII|S|YXININ;flight|-32672|2957|10957|2025-05-30T20:30|10075|2025-05-30T23:05|155|GU1YXSII|G|YXININ&carriers=-32672&operators=-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=11660.64&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|-6555419032980697142|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505301640-2505301810--32672",
+                "10957-10075-2505302030-2505302305--32672"
+              ],
+              "price": {
+                "amount": 11660.64,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505301640-2505301810--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-10075-2505302030-2505302305--32672",
+                  "fare_basis_code": "GU1YXSII",
+                  "booking_code": "G",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "-596129307",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 1.03182,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 1.28503,
+      "cheapest_price": {
+        "amount": 11660.64,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505301640--32672-1-10075-2505302225",
+      "leg_ids": [
+        "9900-2505301640--32672-1-10075-2505302225"
+      ],
+      "pricing_options": [
+        {
+          "id": "uhug3h9U2pvl",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 12376.64,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|434|9900|2025-05-30T16:40|10957|2025-05-30T18:10|90|SU1YXRII|S|YXININ;flight|-32672|2805|10957|2025-05-30T20:00|10075|2025-05-30T22:25|145|GU1YXSII|G|YXININ&carriers=-32672&operators=-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=12376.64&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|6446062676762699399|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505301640-2505301810--32672",
+                "10957-10075-2505302000-2505302225--32672"
+              ],
+              "price": {
+                "amount": 12376.64,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505301640-2505301810--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-10075-2505302000-2505302225--32672",
+                  "fare_basis_code": "GU1YXSII",
+                  "booking_code": "G",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "963283636",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 1.08484,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 1.21387,
+      "cheapest_price": {
+        "amount": 12376.64,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505301245--32672-0-10075-2505301420",
+      "leg_ids": [
+        "9900-2505301245--32672-0-10075-2505301420"
+      ],
+      "pricing_options": [
+        {
+          "id": "r8xDqcPwydHT",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 5205.24,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|634|9900|2025-05-30T12:45|10075|2025-05-30T14:20|95|SU1YXRII|S|YXININ&carriers=-32672&operators=-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=5205.24&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|-4571669458760567535|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10075-2505301245-2505301420--32672"
+              ],
+              "price": {
+                "amount": 5205.24,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10075-2505301245-2505301420--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "-852219238",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 9.36748,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 9.99,
+      "cheapest_price": {
+        "amount": 5205.24,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505301640--32672-2-10075-2505302355",
+      "leg_ids": [
+        "9900-2505301640--32672-2-10075-2505302355"
+      ],
+      "pricing_options": [
+        {
+          "id": "KSMpQIiDsxb6",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 20423.16,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|434|9900|2025-05-30T16:40|10957|2025-05-30T18:10|90|SU1YXRII|S|YXININ;flight|-32672|531|10957|2025-05-30T19:45|9436|2025-05-30T21:30|105|QU1YXSII|Q|YXININ;flight|-32672|2586|9436|2025-05-30T22:20|10075|2025-05-30T23:55|95|QU1YXSII|Q|YXININ&carriers=-32672&operators=-32672;-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=20423.16&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|5276386202234868388|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505301640-2505301810--32672",
+                "10957-9436-2505301945-2505302130--32672",
+                "9436-10075-2505302220-2505302355--32672"
+              ],
+              "price": {
+                "amount": 20423.16,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505301640-2505301810--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-9436-2505301945-2505302130--32672",
+                  "fare_basis_code": "QU1YXSII",
+                  "booking_code": "Q",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "9436-10075-2505302220-2505302355--32672",
+                  "fare_basis_code": "QU1YXSII",
+                  "booking_code": "Q",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "-1168837074",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 0.5214,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 0.46222,
+      "cheapest_price": {
+        "amount": 20423.16,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505301640--32672-1-10075-2505310015",
+      "leg_ids": [
+        "9900-2505301640--32672-1-10075-2505310015"
+      ],
+      "pricing_options": [
+        {
+          "id": "3sK7-uQodtIM",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 11421.97,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|434|9900|2025-05-30T16:40|10957|2025-05-30T18:10|90|SU1YXRII|S|YXININ;flight|-32672|2999|10957|2025-05-30T22:00|10075|2025-05-31T00:15|135|GU1YXSII|G|YXININ&carriers=-32672&operators=-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=11421.97&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|80383312117433283|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505301640-2505301810--32672",
+                "10957-10075-2505302200-2505310015--32672"
+              ],
+              "price": {
+                "amount": 11421.97,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505301640-2505301810--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-10075-2505302200-2505310015--32672",
+                  "fare_basis_code": "GU1YXSII",
+                  "booking_code": "G",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "1522029181",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 0.89132,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 1.31796,
+      "cheapest_price": {
+        "amount": 11421.97,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505300935--32213-0-10075-2505301120",
+      "leg_ids": [
+        "9900-2505300935--32213-0-10075-2505301120"
+      ],
+      "pricing_options": [
+        {
+          "id": "IG5eAxKNzgU0",
+          "agent_ids": [
+            "ingo"
+          ],
+          "price": {
+            "amount": 4876,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T17:23:03",
+            "quote_age": 882
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "ingo",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/ingo/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32213|5187|9900|2025-05-30T09:35|10075|2025-05-30T11:20|105|-|-|-&carriers=-32213&operators=-32213&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=4876.00&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS42LJzEvPF2LmWOMrxcxx20-h4dXjg2xGTAqMTkwSjADTdPfsIAAAAA|-7618836258910056608|3&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T17:23:03&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10075-2505300935-2505301120--32213"
+              ],
+              "price": {
+                "amount": 4876,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T17:23:03",
+                "quote_age": 882
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10075-2505300935-2505301120--32213"
+                }
+              ],
+              "opaque_id": "2105246013",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32213
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 9.04762,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 7.62275,
+      "cheapest_price": {
+        "amount": 4876,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T17:23:03",
+        "quote_age": 882
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505300805--32672-1-10075-2505301320",
+      "leg_ids": [
+        "9900-2505300805--32672-1-10075-2505301320"
+      ],
+      "pricing_options": [
+        {
+          "id": "8hg-fZh2O8Mo",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 10819.62,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|2528|9900|2025-05-30T08:05|10957|2025-05-30T09:35|90|SU1YXRII|S|YXININ;flight|-32672|2425|10957|2025-05-30T10:55|10075|2025-05-30T13:20|145|LU1YXSII|L|YXININ&carriers=-32672&operators=-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=10819.62&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|-7327997058620776791|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505300805-2505300935--32672",
+                "10957-10075-2505301055-2505301320--32672"
+              ],
+              "price": {
+                "amount": 10819.62,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505300805-2505300935--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-10075-2505301055-2505301320--32672",
+                  "fare_basis_code": "LU1YXSII",
+                  "booking_code": "L",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "-1290978681",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 1.35914,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 1.17449,
+      "cheapest_price": {
+        "amount": 10819.62,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505300805--32672-2-10075-2505301500",
+      "leg_ids": [
+        "9900-2505300805--32672-2-10075-2505301500"
+      ],
+      "pricing_options": [
+        {
+          "id": "GgX0Fa3WDc-h",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 17445.5,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|2528|9900|2025-05-30T08:05|10957|2025-05-30T09:35|90|SU1YXRII|S|YXININ;flight|-32672|857|10957|2025-05-30T11:10|17275|2025-05-30T12:25|75|WU1YXSII|W|YXININ;flight|-32672|2594|17275|2025-05-30T13:20|10075|2025-05-30T15:00|100|WU1YXSII|W|YXININ&carriers=-32672&operators=-32672;-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=17445.50&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|-5740935407805804285|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505300805-2505300935--32672",
+                "10957-17275-2505301110-2505301225--32672",
+                "17275-10075-2505301320-2505301500--32672"
+              ],
+              "price": {
+                "amount": 17445.5,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505300805-2505300935--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-17275-2505301110-2505301225--32672",
+                  "fare_basis_code": "WU1YXSII",
+                  "booking_code": "W",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "17275-10075-2505301320-2505301500--32672",
+                  "fare_basis_code": "WU1YXSII",
+                  "booking_code": "W",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "1034272315",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 0.63982,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 0.45272,
+      "cheapest_price": {
+        "amount": 17445.5,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505300805--32672-2-10075-2505301655",
+      "leg_ids": [
+        "9900-2505300805--32672-2-10075-2505301655"
+      ],
+      "pricing_options": [
+        {
+          "id": "QXAy6rBjGsVc",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 16013.49,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|2528|9900|2025-05-30T08:05|10957|2025-05-30T09:35|90|SU1YXRII|S|YXININ;flight|-32672|2627|10957|2025-05-30T10:50|11906|2025-05-30T13:30|160|TU1YXRII|T|YXININ;flight|-32672|664|11906|2025-05-30T15:25|10075|2025-05-30T16:55|90|QU1YXSII|Q|YXININ&carriers=-32672&operators=-32672;-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=16013.49&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|1709298089856005632|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505300805-2505300935--32672",
+                "10957-11906-2505301050-2505301330--32672",
+                "11906-10075-2505301525-2505301655--32672"
+              ],
+              "price": {
+                "amount": 16013.49,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505300805-2505300935--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-11906-2505301050-2505301330--32672",
+                  "fare_basis_code": "TU1YXRII",
+                  "booking_code": "T",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "11906-10075-2505301525-2505301655--32672",
+                  "fare_basis_code": "QU1YXSII",
+                  "booking_code": "Q",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "-561235143",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 0.54579,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 0.49421,
+      "cheapest_price": {
+        "amount": 16013.49,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505301420--32213-1-10075-2505301845",
+      "leg_ids": [
+        "9900-2505301420--32213-1-10075-2505301845"
+      ],
+      "pricing_options": [
+        {
+          "id": "iscVAxBPLgH0",
+          "agent_ids": [
+            "ingo"
+          ],
+          "price": {
+            "amount": 6291,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T17:23:03",
+            "quote_age": 882
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "ingo",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/ingo/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32213|7581|9900|2025-05-30T14:20|9436|2025-05-30T15:50|90|-|-|-;flight|-32213|5139|9436|2025-05-30T17:15|10075|2025-05-30T18:45|90|-|-|-&carriers=-32213&operators=-32213;-32213&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=6291.00&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS42LJzEvPF2LmWOMrxcxx20-h4dXjg2xGTAqMTkwSjADTdPfsIAAAAA|-1761439136789801891|3&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T17:23:03&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-9436-2505301420-2505301550--32213",
+                "9436-10075-2505301715-2505301845--32213"
+              ],
+              "price": {
+                "amount": 6291,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T17:23:03",
+                "quote_age": 882
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-9436-2505301420-2505301550--32213"
+                },
+                {
+                  "segment_id": "9436-10075-2505301715-2505301845--32213"
+                }
+              ],
+              "opaque_id": "-1342432754",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32213
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 2.77857,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 2.71102,
+      "cheapest_price": {
+        "amount": 6291,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T17:23:03",
+        "quote_age": 882
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505302235--32213-0-10075-2505310010",
+      "leg_ids": [
+        "9900-2505302235--32213-0-10075-2505310010"
+      ],
+      "pricing_options": [
+        {
+          "id": "T187d2ZvY64B",
+          "agent_ids": [
+            "ingo"
+          ],
+          "price": {
+            "amount": 4876,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T17:23:03",
+            "quote_age": 882
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "ingo",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/ingo/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32213|753|9900|2025-05-30T22:35|10075|2025-05-31T00:10|95|-|-|-&carriers=-32213&operators=-32213&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=4876.00&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS42LJzEvPF2LmWOMrxcxx20-h4dXjg2xGTAqMTkwSjADTdPfsIAAAAA|1474159571457761554|3&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T17:23:03&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10075-2505302235-2505310010--32213"
+              ],
+              "price": {
+                "amount": 4876,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T17:23:03",
+                "quote_age": 882
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10075-2505302235-2505310010--32213"
+                }
+              ],
+              "opaque_id": "-538408987",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32213
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 10,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 5.35877,
+      "cheapest_price": {
+        "amount": 4876,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T17:23:03",
+        "quote_age": 882
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505301640--32672-1-10075-2505302320",
+      "leg_ids": [
+        "9900-2505301640--32672-1-10075-2505302320"
+      ],
+      "pricing_options": [
+        {
+          "id": "OJQJbU56dPkD",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 11660.64,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|434|9900|2025-05-30T16:40|10957|2025-05-30T18:10|90|SU1YXRII|S|YXININ;flight|-32672|2981|10957|2025-05-30T21:00|10075|2025-05-30T23:20|140|GU1YXSII|G|YXININ&carriers=-32672&operators=-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=11660.64&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|-6330516883147403001|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505301640-2505301810--32672",
+                "10957-10075-2505302100-2505302320--32672"
+              ],
+              "price": {
+                "amount": 11660.64,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505301640-2505301810--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-10075-2505302100-2505302320--32672",
+                  "fare_basis_code": "GU1YXSII",
+                  "booking_code": "G",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "-1175339846",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 0.99313,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 1.28073,
+      "cheapest_price": {
+        "amount": 11660.64,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505301640--32672-2-10075-2505310200",
+      "leg_ids": [
+        "9900-2505301640--32672-2-10075-2505310200"
+      ],
+      "pricing_options": [
+        {
+          "id": "BYlZLFMYgsrd",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 18275.15,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|434|9900|2025-05-30T16:40|10957|2025-05-30T18:10|90|SU1YXRII|S|YXININ;flight|-32672|2809|10957|2025-05-30T20:00|10002|2025-05-30T23:00|180|VU1YXSII|V|YXININ;flight|-32672|2811|10002|2025-05-31T00:10|10075|2025-05-31T02:00|110|TU1YXFII|T|YXININ&carriers=-32672&operators=-32672;-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=18275.15&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|-1766920965822589524|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505301640-2505301810--32672",
+                "10957-10002-2505302000-2505302300--32672",
+                "10002-10075-2505310010-2505310200--32672"
+              ],
+              "price": {
+                "amount": 18275.15,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505301640-2505301810--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-10002-2505302000-2505302300--32672",
+                  "fare_basis_code": "VU1YXSII",
+                  "booking_code": "V",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10002-10075-2505310010-2505310200--32672",
+                  "fare_basis_code": "TU1YXFII",
+                  "booking_code": "T",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "895854425",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 0.45263,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 0.72522,
+      "cheapest_price": {
+        "amount": 18275.15,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    },
+    {
+      "id": "9900-2505301640--32672-1-10075-2505302200",
+      "leg_ids": [
+        "9900-2505301640--32672-1-10075-2505302200"
+      ],
+      "pricing_options": [
+        {
+          "id": "u2wp5wsJRhsK",
+          "agent_ids": [
+            "inda"
+          ],
+          "price": {
+            "amount": 14524.65,
+            "update_status": "pending",
+            "last_updated": "2025-05-17T14:57:26",
+            "quote_age": 1027
+          },
+          "unpriced_type": "",
+          "items": [
+            {
+              "agent_id": "inda",
+              "url": "/transport_deeplink/4.0/US/en-GB/INR/inda/1/9900.10075.2025-05-30/air/airli/flights?itinerary=flight|-32672|434|9900|2025-05-30T16:40|10957|2025-05-30T18:10|90|SU1YXRII|S|YXININ;flight|-32672|2985|10957|2025-05-30T19:35|10075|2025-05-30T22:00|145|VU1YXSII|V|YXININ&carriers=-32672&operators=-32672;-32672&passengers=1&channel=website&cabin_class=economy&fps_session_id=66b1b4fe-3c9b-45fe-9d74-a590ea72d97c&ticket_price=14524.65&is_npt=false&is_multipart=false&client_id=skyscanner_website&q_ids=H4sIAAAAAAAA_-OS4mLJzEtJFGLmWOMrxcxx20-h4dXjg2xGTAqMACqb6wQcAAAA|-7689257700441126333|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2025-05-17T14:57:26&pqid=false&fare_type=base_fare",
+              "segment_ids": [
+                "9900-10957-2505301640-2505301810--32672",
+                "10957-10075-2505301935-2505302200--32672"
+              ],
+              "price": {
+                "amount": 14524.65,
+                "update_status": "pending",
+                "last_updated": "2025-05-17T14:57:26",
+                "quote_age": 1027
+              },
+              "booking_proposition": "PBOOK",
+              "transfer_protection": "",
+              "max_redirect_age": 10,
+              "fares": [
+                {
+                  "segment_id": "9900-10957-2505301640-2505301810--32672",
+                  "fare_basis_code": "SU1YXRII",
+                  "booking_code": "S",
+                  "fare_family": "YXININ"
+                },
+                {
+                  "segment_id": "10957-10075-2505301935-2505302200--32672",
+                  "fare_basis_code": "VU1YXSII",
+                  "booking_code": "V",
+                  "fare_family": "YXININ"
+                }
+              ],
+              "opaque_id": "2131552373",
+              "booking_metadata": {
+                "metadata_set": "",
+                "signature": ""
+              },
+              "ticket_attributes": [],
+              "flight_attributes": [],
+              "discount_category": "DISCOUNT_CATEGORY_UNSPECIFIED",
+              "marketing_carrier_ids": [
+                -32672
+              ]
+            }
+          ],
+          "transfer_type": "MANAGED",
+          "score": 0.99663,
+          "pricing_option_fare": {
+            "attribute_labels": [],
+            "leg_details": {},
+            "brand_names": [],
+            "added_attribute_labels": []
+          },
+          "pricing_option_fare_type": "BASE_FARE"
+        }
+      ],
+      "score": 0.93504,
+      "cheapest_price": {
+        "amount": 14524.65,
+        "update_status": "pending",
+        "last_updated": "2025-05-17T14:57:26",
+        "quote_age": 1027
+      },
+      "pricing_options_count": 1,
+      "has_linked_pricing_options": false
+    }
+  ],
+  "legs": [
+    {
+      "id": "9900-2505301640--32672-1-10075-2505302305",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T16:40:00",
+      "arrival": "2025-05-30T23:05:00",
+      "segment_ids": [
+        "9900-10957-2505301640-2505301810--32672",
+        "10957-10075-2505302030-2505302305--32672"
+      ],
+      "duration": 385,
+      "stop_count": 1,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505301640--32672-1-10075-2505302225",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T16:40:00",
+      "arrival": "2025-05-30T22:25:00",
+      "segment_ids": [
+        "9900-10957-2505301640-2505301810--32672",
+        "10957-10075-2505302000-2505302225--32672"
+      ],
+      "duration": 345,
+      "stop_count": 1,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505301245--32672-0-10075-2505301420",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T12:45:00",
+      "arrival": "2025-05-30T14:20:00",
+      "segment_ids": [
+        "9900-10075-2505301245-2505301420--32672"
+      ],
+      "duration": 95,
+      "stop_count": 0,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505301640--32672-2-10075-2505302355",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T16:40:00",
+      "arrival": "2025-05-30T23:55:00",
+      "segment_ids": [
+        "9900-10957-2505301640-2505301810--32672",
+        "10957-9436-2505301945-2505302130--32672",
+        "9436-10075-2505302220-2505302355--32672"
+      ],
+      "duration": 435,
+      "stop_count": 2,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ],
+        [
+          9436
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505301640--32672-1-10075-2505310015",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T16:40:00",
+      "arrival": "2025-05-31T00:15:00",
+      "segment_ids": [
+        "9900-10957-2505301640-2505301810--32672",
+        "10957-10075-2505302200-2505310015--32672"
+      ],
+      "duration": 455,
+      "stop_count": 1,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505300935--32213-0-10075-2505301120",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T09:35:00",
+      "arrival": "2025-05-30T11:20:00",
+      "segment_ids": [
+        "9900-10075-2505300935-2505301120--32213"
+      ],
+      "duration": 105,
+      "stop_count": 0,
+      "marketing_carrier_ids": [
+        -32213
+      ],
+      "operating_carrier_ids": [
+        -32213
+      ],
+      "stop_ids": [],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505300805--32672-1-10075-2505301320",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T08:05:00",
+      "arrival": "2025-05-30T13:20:00",
+      "segment_ids": [
+        "9900-10957-2505300805-2505300935--32672",
+        "10957-10075-2505301055-2505301320--32672"
+      ],
+      "duration": 315,
+      "stop_count": 1,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505300805--32672-2-10075-2505301500",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T08:05:00",
+      "arrival": "2025-05-30T15:00:00",
+      "segment_ids": [
+        "9900-10957-2505300805-2505300935--32672",
+        "10957-17275-2505301110-2505301225--32672",
+        "17275-10075-2505301320-2505301500--32672"
+      ],
+      "duration": 415,
+      "stop_count": 2,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ],
+        [
+          17275
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505300805--32672-2-10075-2505301655",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T08:05:00",
+      "arrival": "2025-05-30T16:55:00",
+      "segment_ids": [
+        "9900-10957-2505300805-2505300935--32672",
+        "10957-11906-2505301050-2505301330--32672",
+        "11906-10075-2505301525-2505301655--32672"
+      ],
+      "duration": 530,
+      "stop_count": 2,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ],
+        [
+          11906
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505301420--32213-1-10075-2505301845",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T14:20:00",
+      "arrival": "2025-05-30T18:45:00",
+      "segment_ids": [
+        "9900-9436-2505301420-2505301550--32213",
+        "9436-10075-2505301715-2505301845--32213"
+      ],
+      "duration": 265,
+      "stop_count": 1,
+      "marketing_carrier_ids": [
+        -32213
+      ],
+      "operating_carrier_ids": [
+        -32213
+      ],
+      "stop_ids": [
+        [
+          9436
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505302235--32213-0-10075-2505310010",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T22:35:00",
+      "arrival": "2025-05-31T00:10:00",
+      "segment_ids": [
+        "9900-10075-2505302235-2505310010--32213"
+      ],
+      "duration": 95,
+      "stop_count": 0,
+      "marketing_carrier_ids": [
+        -32213
+      ],
+      "operating_carrier_ids": [
+        -32213
+      ],
+      "stop_ids": [],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505301640--32672-1-10075-2505302320",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T16:40:00",
+      "arrival": "2025-05-30T23:20:00",
+      "segment_ids": [
+        "9900-10957-2505301640-2505301810--32672",
+        "10957-10075-2505302100-2505302320--32672"
+      ],
+      "duration": 400,
+      "stop_count": 1,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505301640--32672-2-10075-2505310200",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T16:40:00",
+      "arrival": "2025-05-31T02:00:00",
+      "segment_ids": [
+        "9900-10957-2505301640-2505301810--32672",
+        "10957-10002-2505302000-2505302300--32672",
+        "10002-10075-2505310010-2505310200--32672"
+      ],
+      "duration": 560,
+      "stop_count": 2,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ],
+        [
+          10002
+        ]
+      ],
+      "self_transfer": false
+    },
+    {
+      "id": "9900-2505301640--32672-1-10075-2505302200",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "departure": "2025-05-30T16:40:00",
+      "arrival": "2025-05-30T22:00:00",
+      "segment_ids": [
+        "9900-10957-2505301640-2505301810--32672",
+        "10957-10075-2505301935-2505302200--32672"
+      ],
+      "duration": 320,
+      "stop_count": 1,
+      "marketing_carrier_ids": [
+        -32672
+      ],
+      "operating_carrier_ids": [
+        -32672
+      ],
+      "stop_ids": [
+        [
+          10957
+        ]
+      ],
+      "self_transfer": false
+    }
+  ],
+  "segments": [
+    {
+      "id": "9900-10957-2505301640-2505301810--32672",
+      "origin_place_id": 9900,
+      "destination_place_id": 10957,
+      "arrival": "2025-05-30T18:10:00",
+      "departure": "2025-05-30T16:40:00",
+      "duration": 90,
+      "marketing_flight_number": "434",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-10075-2505302030-2505302305--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T23:05:00",
+      "departure": "2025-05-30T20:30:00",
+      "duration": 155,
+      "marketing_flight_number": "2957",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-10075-2505302000-2505302225--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T22:25:00",
+      "departure": "2025-05-30T20:00:00",
+      "duration": 145,
+      "marketing_flight_number": "2805",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "9900-10075-2505301245-2505301420--32672",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T14:20:00",
+      "departure": "2025-05-30T12:45:00",
+      "duration": 95,
+      "marketing_flight_number": "634",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-9436-2505301945-2505302130--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 9436,
+      "arrival": "2025-05-30T21:30:00",
+      "departure": "2025-05-30T19:45:00",
+      "duration": 105,
+      "marketing_flight_number": "531",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "9436-10075-2505302220-2505302355--32672",
+      "origin_place_id": 9436,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T23:55:00",
+      "departure": "2025-05-30T22:20:00",
+      "duration": 95,
+      "marketing_flight_number": "2586",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-10075-2505302200-2505310015--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-31T00:15:00",
+      "departure": "2025-05-30T22:00:00",
+      "duration": 135,
+      "marketing_flight_number": "2999",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "9900-10075-2505300935-2505301120--32213",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T11:20:00",
+      "departure": "2025-05-30T09:35:00",
+      "duration": 105,
+      "marketing_flight_number": "5187",
+      "marketing_carrier_id": -32213,
+      "operating_carrier_id": -32213,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "9900-10957-2505300805-2505300935--32672",
+      "origin_place_id": 9900,
+      "destination_place_id": 10957,
+      "arrival": "2025-05-30T09:35:00",
+      "departure": "2025-05-30T08:05:00",
+      "duration": 90,
+      "marketing_flight_number": "2528",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-10075-2505301055-2505301320--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T13:20:00",
+      "departure": "2025-05-30T10:55:00",
+      "duration": 145,
+      "marketing_flight_number": "2425",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-17275-2505301110-2505301225--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 17275,
+      "arrival": "2025-05-30T12:25:00",
+      "departure": "2025-05-30T11:10:00",
+      "duration": 75,
+      "marketing_flight_number": "857",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "17275-10075-2505301320-2505301500--32672",
+      "origin_place_id": 17275,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T15:00:00",
+      "departure": "2025-05-30T13:20:00",
+      "duration": 100,
+      "marketing_flight_number": "2594",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-11906-2505301050-2505301330--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 11906,
+      "arrival": "2025-05-30T13:30:00",
+      "departure": "2025-05-30T10:50:00",
+      "duration": 160,
+      "marketing_flight_number": "2627",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "11906-10075-2505301525-2505301655--32672",
+      "origin_place_id": 11906,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T16:55:00",
+      "departure": "2025-05-30T15:25:00",
+      "duration": 90,
+      "marketing_flight_number": "664",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "9900-9436-2505301420-2505301550--32213",
+      "origin_place_id": 9900,
+      "destination_place_id": 9436,
+      "arrival": "2025-05-30T15:50:00",
+      "departure": "2025-05-30T14:20:00",
+      "duration": 90,
+      "marketing_flight_number": "7581",
+      "marketing_carrier_id": -32213,
+      "operating_carrier_id": -32213,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "9436-10075-2505301715-2505301845--32213",
+      "origin_place_id": 9436,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T18:45:00",
+      "departure": "2025-05-30T17:15:00",
+      "duration": 90,
+      "marketing_flight_number": "5139",
+      "marketing_carrier_id": -32213,
+      "operating_carrier_id": -32213,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "9900-10075-2505302235-2505310010--32213",
+      "origin_place_id": 9900,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-31T00:10:00",
+      "departure": "2025-05-30T22:35:00",
+      "duration": 95,
+      "marketing_flight_number": "753",
+      "marketing_carrier_id": -32213,
+      "operating_carrier_id": -32213,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-10075-2505302100-2505302320--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T23:20:00",
+      "departure": "2025-05-30T21:00:00",
+      "duration": 140,
+      "marketing_flight_number": "2981",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-10002-2505302000-2505302300--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 10002,
+      "arrival": "2025-05-30T23:00:00",
+      "departure": "2025-05-30T20:00:00",
+      "duration": 180,
+      "marketing_flight_number": "2809",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10002-10075-2505310010-2505310200--32672",
+      "origin_place_id": 10002,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-31T02:00:00",
+      "departure": "2025-05-31T00:10:00",
+      "duration": 110,
+      "marketing_flight_number": "2811",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    },
+    {
+      "id": "10957-10075-2505301935-2505302200--32672",
+      "origin_place_id": 10957,
+      "destination_place_id": 10075,
+      "arrival": "2025-05-30T22:00:00",
+      "departure": "2025-05-30T19:35:00",
+      "duration": 145,
+      "marketing_flight_number": "2985",
+      "marketing_carrier_id": -32672,
+      "operating_carrier_id": -32672,
+      "transport_mode": "TRANSPORT_MODE_FLIGHT"
+    }
+  ],
+  "places": [
+    {
+      "id": 11906,
+      "entity_id": 95790306,
+      "alt_id": "GOI",
+      "parent_id": 3432,
+      "parent_entity_id": 27541888,
+      "name": "Goa Dabolim",
+      "type": "Airport",
+      "display_code": "GOI"
+    },
+    {
+      "id": 3368,
+      "entity_id": 27538779,
+      "alt_id": "IBHO",
+      "parent_id": 170,
+      "parent_entity_id": 29475284,
+      "name": "Bhopal",
+      "type": "City",
+      "display_code": "BHO"
+    },
+    {
+      "id": 3432,
+      "entity_id": 27541888,
+      "alt_id": "IGOI",
+      "parent_id": 170,
+      "parent_entity_id": 29475284,
+      "name": "Goa",
+      "type": "City",
+      "display_code": "GOI"
+    },
+    {
+      "id": 3401,
+      "entity_id": 27540706,
+      "alt_id": "IDEL",
+      "parent_id": 170,
+      "parent_entity_id": 29475284,
+      "name": "New Delhi",
+      "type": "City",
+      "display_code": "DEL"
+    },
+    {
+      "id": 170,
+      "entity_id": 29475284,
+      "alt_id": "IN",
+      "parent_id": 2,
+      "name": "India",
+      "type": "Country",
+      "display_code": "IN"
+    },
+    {
+      "id": 9900,
+      "entity_id": 128668037,
+      "alt_id": "BHO",
+      "parent_id": 3368,
+      "parent_entity_id": 27538779,
+      "name": "Bhopal",
+      "type": "Airport",
+      "display_code": "BHO"
+    },
+    {
+      "id": 10957,
+      "entity_id": 95673498,
+      "alt_id": "DEL",
+      "parent_id": 3401,
+      "parent_entity_id": 27540706,
+      "name": "Indira Gandhi International ",
+      "type": "Airport",
+      "display_code": "DEL"
+    },
+    {
+      "id": 3374,
+      "entity_id": 27539471,
+      "alt_id": "IBLR",
+      "parent_id": 170,
+      "parent_entity_id": 29475284,
+      "name": "Bengaluru",
+      "type": "City",
+      "display_code": "BLR"
+    },
+    {
+      "id": 3662,
+      "entity_id": 27547310,
+      "alt_id": "IUDR",
+      "parent_id": 170,
+      "parent_entity_id": 29475284,
+      "name": "Udaipur",
+      "type": "City",
+      "display_code": "UDR"
+    },
+    {
+      "id": 3376,
+      "entity_id": 27539520,
+      "alt_id": "IBOM",
+      "parent_id": 170,
+      "parent_entity_id": 29475284,
+      "name": "Mumbai",
+      "type": "City",
+      "display_code": "BOM"
+    },
+    {
+      "id": 10002,
+      "entity_id": 95673351,
+      "alt_id": "BLR",
+      "parent_id": 3374,
+      "parent_entity_id": 27539471,
+      "name": "Bengaluru",
+      "type": "Airport",
+      "display_code": "BLR"
+    },
+    {
+      "id": 3355,
+      "entity_id": 27536554,
+      "alt_id": "IAMD",
+      "parent_id": 170,
+      "parent_entity_id": 29475284,
+      "name": "Ahmedabad",
+      "type": "City",
+      "display_code": "AMD"
+    },
+    {
+      "id": 10075,
+      "entity_id": 95673320,
+      "alt_id": "BOM",
+      "parent_id": 3376,
+      "parent_entity_id": 27539520,
+      "name": "Mumbai",
+      "type": "Airport",
+      "display_code": "BOM"
+    },
+    {
+      "id": 17275,
+      "entity_id": 128669090,
+      "alt_id": "UDR",
+      "parent_id": 3662,
+      "parent_entity_id": 27547310,
+      "name": "Udaipur",
+      "type": "Airport",
+      "display_code": "UDR"
+    },
+    {
+      "id": 9436,
+      "entity_id": 95673366,
+      "alt_id": "AMD",
+      "parent_id": 3355,
+      "parent_entity_id": 27536554,
+      "name": "Ahmedabad",
+      "type": "Airport",
+      "display_code": "AMD"
+    }
+  ],
+  "carriers": [
+    {
+      "id": -32213,
+      "name": "IndiGo",
+      "alt_id": "49",
+      "display_code": "6E",
+      "display_code_type": "IATA"
+    },
+    {
+      "id": -32672,
+      "name": "Air India",
+      "alt_id": "AI",
+      "display_code": "AI",
+      "display_code_type": "IATA",
+      "alliance": -31999
+    }
+  ],
+  "alliances": [
+    {
+      "id": -31999,
+      "name": "Star Alliance"
+    }
+  ],
+  "brands": [],
+  "agents": [
+    {
+      "id": "tlcy",
+      "name": "Travelocity",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 1.61,
+      "feedback_count": 295,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "fldu",
+      "name": "flydubai",
+      "is_carrier": true,
+      "update_status": "current",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.93,
+      "feedback_count": 88,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "kfus",
+      "name": "Kissandfly",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 2.89,
+      "feedback_count": 508,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "bcom",
+      "name": "Booking.com ",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.82,
+      "feedback_count": 9305,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "vaya",
+      "name": "BudgetAir",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 3.09,
+      "feedback_count": 3915,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "fara",
+      "name": "Farera",
+      "is_carrier": false,
+      "update_status": "current",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 2.02,
+      "feedback_count": 433,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "chpo",
+      "name": "CheapOair",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 2.53,
+      "feedback_count": 1167,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "skyp",
+      "name": "Kiwi.com",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 3.24,
+      "feedback_count": 3184,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "suus",
+      "name": "StudentUniverse",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 2.9,
+      "feedback_count": 414,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "inda",
+      "name": "Air India",
+      "is_carrier": true,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.02,
+      "feedback_count": 205,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "stbf",
+      "name": "Sky-tours",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 2.31,
+      "feedback_count": 1052,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "jfus",
+      "name": "Justfly.com",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.75,
+      "feedback_count": 2272,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "ingo",
+      "name": "IndiGo",
+      "is_carrier": true,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.08,
+      "feedback_count": 359,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "wfus",
+      "name": "Wizfair",
+      "is_carrier": false,
+      "update_status": "current",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.12,
+      "feedback_count": 1200,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "pcln",
+      "name": "Priceline",
+      "is_carrier": false,
+      "update_status": "current",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 3.76,
+      "feedback_count": 1231,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "edus",
+      "name": "eDreams",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 2.65,
+      "feedback_count": 3342,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "akai",
+      "name": "Akasa Air ",
+      "is_carrier": true,
+      "update_status": "current",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true
+    },
+    {
+      "id": "gtus",
+      "name": "Gotogate",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 2.3,
+      "feedback_count": 747,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "cust",
+      "name": "Trip.com",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.54,
+      "feedback_count": 7604,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "oojo",
+      "name": "Oojo",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.49,
+      "feedback_count": 3700,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "arus",
+      "name": "Mytrip",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 3.43,
+      "feedback_count": 4363,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "jtus",
+      "name": "Jetabroad",
+      "is_carrier": false,
+      "update_status": "current",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 3.88,
+      "feedback_count": 318,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "xpus",
+      "name": "Expedia",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 4.64,
+      "feedback_count": 5851,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "fnus",
+      "name": "Flightnetwork",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 2.86,
+      "feedback_count": 587,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "tram",
+      "name": "Travel Merry",
+      "is_carrier": false,
+      "update_status": "current",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 3.81,
+      "feedback_count": 640,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    },
+    {
+      "id": "orbz",
+      "name": "Orbitz",
+      "is_carrier": false,
+      "update_status": "pending",
+      "optimised_for_mobile": true,
+      "live_update_allowed": true,
+      "rating_status": "available",
+      "rating": 1.58,
+      "feedback_count": 331,
+      "rating_breakdown": {
+        "reliable_prices": 0,
+        "clear_extra_fees": 0,
+        "customer_service": 0,
+        "ease_of_booking": 0,
+        "other": 0
+      }
+    }
+  ],
+  "stats": {
+    "itineraries": {
+      "min_duration": 95,
+      "max_duration": 560,
+      "min_longest_itinerary_leg_duration": 95,
+      "max_longest_itinerary_leg_duration": 560,
+      "total": {
+        "count": 14,
+        "min_price": 4876
+      },
+      "stops": {
+        "direct": {
+          "total": {
+            "count": 3,
+            "min_price": 4876
+          },
+          "ticket": {
+            "single_ticket": {
+              "count": 3,
+              "min_price": 4876
+            },
+            "multi_ticket_non_npt": {
+              "count": 0
+            },
+            "multi_ticket_npt": {
+              "count": 0
+            }
+          }
+        },
+        "one_stop": {
+          "total": {
+            "count": 7,
+            "min_price": 6291
+          },
+          "ticket": {
+            "single_ticket": {
+              "count": 7,
+              "min_price": 6291
+            },
+            "multi_ticket_non_npt": {
+              "count": 0
+            },
+            "multi_ticket_npt": {
+              "count": 0
+            }
+          }
+        },
+        "two_plus_stops": {
+          "total": {
+            "count": 4,
+            "min_price": 16013.49
+          },
+          "ticket": {
+            "single_ticket": {
+              "count": 4,
+              "min_price": 16013.49
+            },
+            "multi_ticket_non_npt": {
+              "count": 0
+            },
+            "multi_ticket_npt": {
+              "count": 0
+            }
+          }
+        }
+      },
+      "fares": {
+        "advance_seat_selection": {
+          "count": 0
+        }
+      }
+    },
+    "legs": [
+      {
+        "index": 1,
+        "min_duration": 95,
+        "max_duration": 560,
+        "count": 14,
+        "origins": [
+          {
+            "id": 9900,
+            "count": 14
+          }
+        ],
+        "destinations": [
+          {
+            "id": 10075,
+            "count": 14
+          }
+        ]
+      }
+    ],
+    "carriers": {
+      "single_carriers": [
+        {
+          "id": -32213,
+          "count": 3,
+          "min_price": 4876
+        },
+        {
+          "id": -32672,
+          "count": 11,
+          "min_price": 5205.24
+        }
+      ],
+      "multiple_carriers": {
+        "count": 0
+      }
+    },
+    "filter_hints": {
+      "enable_direct_filter": true,
+      "enable_one_stop_filter": true,
+      "enable_two_plus_stops_filter": true
+    }
+  },
+  "quote_requests": [],
+  "quotes": [],
+  "repro_urls": {
+    "ps_repro_url": "",
+    "lus_repro_urls": []
+  },
+  "rejected_itineraries": [],
+  "pricing_variants_filters": {},
+  "plugins": [
+    {
+      "@type": "type.googleapis.com/deliveryservice.Creatives",
+      "creatives": [],
+      "status": "COMPLETED",
+      "matches": [
+        {
+          "id_format": "fmt.flexibleSearch",
+          "fields": {
+            "session_id": "79d990e1-eb63-4834-b58b-ca23ab5462b3",
+            "sponsoredText": "Sponsored",
+            "alternatives_inventory_session_status": "INCOMPLETE",
+            "onlyP1": "true"
+          },
+          "analytics_properties": {
+            "id_pixel_creative": "CAM-7929fed9-daa2-4543-91a0-1a0015d75343",
+            "id_creative": "CAM-7929fed9-daa2-4543-91a0-1a0015d75343",
+            "id_campaign": "CAM-7929fed9-daa2-4543-91a0-1a0015d75343",
+            "id_placement": "desktop.flights.dayview/inline",
+            "priority": "HOUSE",
+            "service": "SPONSORED_SERVICE",
+            "id_order": "4352",
+            "currency": "EUR"
+          }
+        }
+      ],
+      "position_to_impression_id": {},
+      "creative_position_to_impression_id": {},
+      "response_version": 2
+    },
+    {
+      "@type": "type.googleapis.com/GreenItineraries",
+      "itineraries": {
+        "9900-2505301640--32672-1-10075-2505302305": {
+          "id": "9900-2505301640--32672-1-10075-2505302305",
+          "is_eco_contender": false,
+          "eco_contender_delta": -165.17957,
+          "emissions_in_kg": 163.698,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 101.966995,
+          "emissions_delta_percentage": 165.17958,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505301640--32672-1-10075-2505302225": {
+          "id": "9900-2505301640--32672-1-10075-2505302225",
+          "is_eco_contender": false,
+          "eco_contender_delta": -208.32808,
+          "emissions_in_kg": 190.334,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 128.603,
+          "emissions_delta_percentage": 208.32808,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505301245--32672-0-10075-2505301420": {
+          "id": "9900-2505301245--32672-0-10075-2505301420",
+          "is_eco_contender": false,
+          "eco_contender_delta": -47.694027,
+          "emissions_in_kg": 91.173,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 29.441998,
+          "emissions_delta_percentage": 47.694027,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505301640--32672-2-10075-2505302355": {
+          "id": "9900-2505301640--32672-2-10075-2505302355",
+          "is_eco_contender": false,
+          "eco_contender_delta": -280.34213,
+          "emissions_in_kg": 234.789,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 173.058,
+          "emissions_delta_percentage": 280.34213,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505301640--32672-1-10075-2505310015": {
+          "id": "9900-2505301640--32672-1-10075-2505310015",
+          "is_eco_contender": false,
+          "eco_contender_delta": -165.17957,
+          "emissions_in_kg": 163.698,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 101.966995,
+          "emissions_delta_percentage": 165.17958,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505300935--32213-0-10075-2505301120": {
+          "id": "9900-2505300935--32213-0-10075-2505301120",
+          "is_eco_contender": false,
+          "eco_contender_delta": 1.1388123,
+          "emissions_in_kg": 61.028,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": -0.7029991,
+          "emissions_delta_percentage": -1.138812,
+          "emissions_level": "EMISSIONS_LEVEL_TYPICAL"
+        },
+        "9900-2505300805--32672-1-10075-2505301320": {
+          "id": "9900-2505300805--32672-1-10075-2505301320",
+          "is_eco_contender": false,
+          "eco_contender_delta": -165.17957,
+          "emissions_in_kg": 163.698,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 101.966995,
+          "emissions_delta_percentage": 165.17958,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505300805--32672-2-10075-2505301500": {
+          "id": "9900-2505300805--32672-2-10075-2505301500",
+          "is_eco_contender": false,
+          "eco_contender_delta": -245.26413,
+          "emissions_in_kg": 213.135,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 151.40399,
+          "emissions_delta_percentage": 245.26413,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505300805--32672-2-10075-2505301655": {
+          "id": "9900-2505300805--32672-2-10075-2505301655",
+          "is_eco_contender": false,
+          "eco_contender_delta": -294.2962,
+          "emissions_in_kg": 243.403,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 181.672,
+          "emissions_delta_percentage": 294.2962,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505301420--32213-1-10075-2505301845": {
+          "id": "9900-2505301420--32213-1-10075-2505301845",
+          "is_eco_contender": false,
+          "eco_contender_delta": -56.964897,
+          "emissions_in_kg": 96.896,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 35.165005,
+          "emissions_delta_percentage": 56.964897,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505302235--32213-0-10075-2505310010": {
+          "id": "9900-2505302235--32213-0-10075-2505310010",
+          "is_eco_contender": true,
+          "eco_contender_delta": 8.172554,
+          "emissions_in_kg": 56.686,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": -5.044998,
+          "emissions_delta_percentage": -8.172555,
+          "emissions_level": "EMISSIONS_LEVEL_LOWER"
+        },
+        "9900-2505301640--32672-1-10075-2505302320": {
+          "id": "9900-2505301640--32672-1-10075-2505302320",
+          "is_eco_contender": false,
+          "eco_contender_delta": -208.32808,
+          "emissions_in_kg": 190.334,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 128.603,
+          "emissions_delta_percentage": 208.32808,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505301640--32672-2-10075-2505310200": {
+          "id": "9900-2505301640--32672-2-10075-2505310200",
+          "is_eco_contender": false,
+          "eco_contender_delta": -357.77487,
+          "emissions_in_kg": 282.589,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 220.85799,
+          "emissions_delta_percentage": 357.77484,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        },
+        "9900-2505301640--32672-1-10075-2505302200": {
+          "id": "9900-2505301640--32672-1-10075-2505302200",
+          "is_eco_contender": false,
+          "eco_contender_delta": -165.17957,
+          "emissions_in_kg": 163.698,
+          "typical_emissions_in_kg": 61.731,
+          "emissions_delta_in_kg": 101.966995,
+          "emissions_delta_percentage": 165.17958,
+          "emissions_level": "EMISSIONS_LEVEL_HIGHER"
+        }
+      },
+      "typical_emissions_in_kg": 61.731
+    }
+  ],
+  "degradedResponseReasons": []
+}

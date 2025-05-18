@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // Import React Icons
 import { FaPlaneDeparture, FaPlaneArrival, FaClock, FaMoneyBillWave } from 'react-icons/fa';
 import { IoAirplane } from 'react-icons/io5';
 import { BiTransfer } from 'react-icons/bi';
 import { BsCalendarDate } from 'react-icons/bs';
+import axios from 'axios';
+import MLStatusIndicator from '@/components/MLStatusIndicator';
 
 // Flight card component specifically designed for the Skyscanner-like API response
 const FlightCard = ({ itinerary, legs, places, carriers, agents }) => {
   const [logoError, setLogoError] = useState(false);
+  const [predictedPrice, setPredictedPrice] = useState(null);
+  const [isPredicting, setIsPredicting] = useState(true);
+  const [isEstimate, setIsEstimate] = useState(false);
   
   // Find the leg information for this itinerary
   const leg = legs.find(leg => leg.id === itinerary.leg_ids[0]);
@@ -73,8 +78,67 @@ const FlightCard = ({ itinerary, legs, places, carriers, agents }) => {
     }
   };
   
+  // Get price prediction when component mounts
+  useEffect(() => {
+    const predictPrice = async () => {
+      try {
+        setIsPredicting(true);
+        
+        // Get carrier information
+        const carrierId = leg.marketing_carrier_ids?.[0] || 
+                         leg.operating_carrier_ids?.[0] || 
+                         leg.carrier_id;
+        const carrier = carriers.find(c => c.id === carrierId);
+        const carrierName = carrier?.name || "Unknown Airline";
+        
+        // Format departure and arrival times
+        const departureDateTime = new Date(leg.departure).toISOString();
+        const arrivalDateTime = new Date(leg.arrival).toISOString();
+        
+        // Create data object for prediction
+        const predictionData = {
+          airline: carrierName,
+          source: origin?.display_code || "",
+          destination: destination?.display_code || "",
+          departure_time: departureDateTime,
+          arrival_time: arrivalDateTime,
+          stops: leg.stop_count || 0
+        };
+        
+        console.log(`Requesting prediction for flight: ${origin?.display_code} → ${destination?.display_code} | ${carrierName} | Stops: ${leg.stop_count}`);
+        
+        try {
+          // Call prediction API
+          const response = await axios.post('/api/predict-price', predictionData);
+          setPredictedPrice(response.data.predicted_price);
+          setIsEstimate(response.data.note ? true : false);
+          
+          console.log(`Prediction received: ₹${response.data.predicted_price} ${response.data.note ? "(Estimate)" : "(ML Prediction)"}`);
+        } catch (error) {
+          console.error('Error predicting price:', error);
+          
+          // Simple fallback calculation
+          const basePrice = 5000;
+          const stopMultiplier = (leg.stop_count || 0) * 1200;
+          const fallbackPrice = basePrice + stopMultiplier;
+          
+          setPredictedPrice(fallbackPrice);
+          setIsEstimate(true);
+          
+          console.log(`Using fallback price: ₹${fallbackPrice} (Frontend Fallback)`);
+        }
+      } catch (error) {
+        console.error('Error in price prediction flow:', error);
+      } finally {
+        setIsPredicting(false);
+      }
+    };
+    
+    predictPrice();
+  }, [leg, origin, destination, carriers]);
+
   return (
-    <div className="w-3xl bg-white border border-gray-200 rounded-xl p-5 mb-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+    <div className="w-3xl bg-white border border-gray-200 rounded-xl p-5 mb-6 shadow-md hover:shadow-lg transition-all duration-300">
       {/* Header with airline and stop info */}
       <div className="flex justify-between items-center mb-4 pb-3 border-b border-gray-100">
         <div className="flex items-center">
@@ -161,6 +225,22 @@ const FlightCard = ({ itinerary, legs, places, carriers, agents }) => {
           <div>
             <div className="font-bold text-xl text-green-600">₹{price?.toLocaleString() || "N/A"}</div>
             <div className="text-xs text-gray-500">per person</div>
+            
+            {/* Add predicted price */}
+            {isPredicting ? (
+              <div className="text-xs text-gray-500 mt-1 flex items-center">
+                <svg className="animate-spin -ml-1 mr-1 h-3 w-3 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Predicting best price...
+              </div>
+            ) : predictedPrice ? (
+              <div className={`text-xs ${isEstimate ? 'text-amber-600' : 'text-green-600'} mt-1`}>
+                {isEstimate ? 'Est. Price:' : 'AI Predicted:'} ₹{predictedPrice.toLocaleString()}
+                {isEstimate && <span className="text-gray-500 text-xs"> (ML service offline)</span>}
+              </div>
+            ) : null}
           </div>
         </div>
         
@@ -177,6 +257,11 @@ const FlightCard = ({ itinerary, legs, places, carriers, agents }) => {
         >
           Details
         </button>
+      </div>
+      
+      {/* ML Status Indicator - Centered */}
+      <div className="mt-2 flex justify-center">
+        <MLStatusIndicator />
       </div>
     </div>
   );

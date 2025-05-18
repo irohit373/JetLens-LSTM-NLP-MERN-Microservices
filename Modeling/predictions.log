@@ -1,0 +1,54 @@
+2025-05-18 15:35:22,160 - flight_price_predictor - INFO - Model loaded successfully from D:\Coding\JetLens-LSTM-NLP-MERN-Microservices\Modeling\flight_rf.pkl
+2025-05-18 15:35:22,170 - flight_price_predictor - INFO - Starting server on port 5000
+2025-05-18 15:35:22,293 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.54:5000
+2025-05-18 15:35:22,303 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 15:35:22,312 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 15:35:25,901 - flight_price_predictor - INFO - Model loaded successfully from D:\Coding\JetLens-LSTM-NLP-MERN-Microservices\Modeling\flight_rf.pkl
+2025-05-18 15:35:25,910 - flight_price_predictor - INFO - Starting server on port 5000
+2025-05-18 15:35:25,943 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 15:35:25,956 - werkzeug - INFO -  * Debugger PIN: 254-941-984
+2025-05-18 15:35:36,206 - flight_price_predictor - INFO - [REQUEST] Time: 2025-05-18 15:35:36 | IP: 127.0.0.1 | Data: {'airline': 'IndiGo', 'source': 'DEL', 'destination': 'BOM', 'departure_time': '2023-07-15T10:00:00.000Z', 'arrival_time': '2023-07-15T12:30:00.000Z', 'stops': 0}
+2025-05-18 15:35:36,206 - flight_price_predictor - INFO - Processing prediction for IndiGo flight from DEL to BOM with 0 stops
+2025-05-18 15:35:36,228 - flight_price_predictor - INFO - Time features: Day: 15, Month: 7, Duration: 2h 30m
+2025-05-18 15:35:36,233 - flight_price_predictor - INFO - Mapped airline 'indigo' to model features: ['IndiGo']
+2025-05-18 15:35:36,235 - flight_price_predictor - INFO - Mapped source 'DEL' to model features: ['s_Delhi']
+2025-05-18 15:35:36,237 - flight_price_predictor - INFO - Mapped destination 'BOM' to model features: []
+2025-05-18 15:35:36,238 - flight_price_predictor - INFO - Input features array prepared with 29 features
+2025-05-18 15:35:36,563 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:35:36] "POST /api/predict HTTP/1.1" 200 -
+2025-05-18 15:35:57,825 - flight_price_predictor - INFO - Model loaded successfully from D:\Coding\JetLens-LSTM-NLP-MERN-Microservices\Modeling\flight_rf.pkl
+2025-05-18 15:35:57,829 - flight_price_predictor - INFO - Starting server on port 5000
+2025-05-18 15:35:57,879 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.54:5000
+2025-05-18 15:35:57,882 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 15:35:57,887 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 15:36:01,571 - flight_price_predictor - INFO - Model loaded successfully from D:\Coding\JetLens-LSTM-NLP-MERN-Microservices\Modeling\flight_rf.pkl
+2025-05-18 15:36:01,583 - flight_price_predictor - INFO - Starting server on port 5000
+2025-05-18 15:36:01,611 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 15:36:01,617 - werkzeug - INFO -  * Debugger PIN: 254-941-984
+2025-05-18 15:36:33,593 - flight_price_predictor - INFO - Home endpoint accessed from 127.0.0.1
+2025-05-18 15:36:33,594 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 15:36:33] "GET / HTTP/1.1" 200 -
+2025-05-18 15:50:08,192 - werkzeug - INFO -  * Detected change in 'D:\\Coding\\JetLens-LSTM-NLP-MERN-Microservices\\Modeling\\app.py', reloading
+2025-05-18 15:50:12,684 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 15:50:25,006 - flight_price_predictor - INFO - Model loaded successfully from D:\Coding\JetLens-LSTM-NLP-MERN-Microservices\Modeling\flight_rf.pkl
+2025-05-18 15:50:28,541 - flight_price_predictor - INFO - Starting server on port 5000
+2025-05-18 15:50:28,780 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 15:50:28,860 - werkzeug - INFO -  * Debugger PIN: 254-941-984
+2025-05-18 15:50:36,748 - werkzeug - INFO -  * Detected change in 'D:\\Coding\\JetLens-LSTM-NLP-MERN-Microservices\\Modeling\\app.py', reloading
+2025-05-18 15:50:37,364 - werkzeug - INFO -  * Restarting with stat
+2025-05-18 15:50:43,269 - flight_price_predictor - INFO - Model loaded successfully from D:\Coding\JetLens-LSTM-NLP-MERN-Microservices\Modeling\flight_rf.pkl
+2025-05-18 15:50:43,291 - flight_price_predictor - INFO - Starting server on port 5000
+2025-05-18 15:50:43,707 - werkzeug - WARNING -  * Debugger is active!
+2025-05-18 15:50:43,718 - werkzeug - INFO -  * Debugger PIN: 254-941-984
+2025-05-18 15:59:28,158 - flight_price_predictor - INFO - Model loaded successfully from D:\Coding\JetLens-LSTM-NLP-MERN-Microservices\Modeling\flight_rf.pkl
+2025-05-18 15:59:28,166 - flight_price_predictor - INFO - Starting server on port 5000
+2025-05-18 15:59:28,283 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.54:5000
+2025-05-18 15:59:28,284 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 15:59:28,289 - werkzeug - INFO -  * Restarting with stat
