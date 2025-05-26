@@ -1,25 +1,32 @@
 # JetLens
 
-JetLens is a full-stack application for predicting flight prices using machine learning. It features a Python-based backend for ML inference and a Next.js frontend for user interaction.
+JetLens is a full-stack application built to tackle the real-world challenges of flight search and price prediction. By combining a Python-based backend for machine learning inference with a modern Next.js frontend, JetLens empowers users to make smarter travel decisions.
 
-## Features
+## ✨ Features
 
-- Predicts flight prices using a trained ML model
-- REST API built with Python (Flask)
-- Modern frontend built with Next.js and Tailwind CSS
-- Logging and error handling
-- Easy local development with batch scripts
+- 🤖 Predicts flight prices using a trained ML model
+- 🔗 REST API built with Python (Flask)
+- 💻 Modern frontend built with Next.js and Tailwind CSS
+- 📝 Logging and error handling
+- ⚙️ Easy local development with batch scripts
 
-## Problems Solved
+## 🛠️ Problems Solved
 
-JetLens addresses several key challenges in the flight search and booking domain:
+JetLens directly addresses several pain points in the flight booking experience:
 
-- **Search Airport Optimization:** Efficiently searches and filters airports from large datasets, providing fast and relevant suggestions to users.
-- **Flight Score Recommendation:** Ranks and recommends flights based on a combination of price, duration, and user preferences, helping users make informed decisions.
-- **Fast Fetching:** Implements optimized data fetching and caching strategies to ensure quick responses and a smooth user experience.
-- **ML-Powered Price Forecasting:** Utilizes machine learning models to accurately predict flight prices, enabling users to find the best deals and plan their trips with confidence.
+- 🛫 **Search Airport Optimization:** Quickly finds and filters airports from massive datasets, ensuring users get fast, relevant suggestions as they type.
+- 🏆 **Flight Score Recommendation:** Helps users choose the best flights by ranking options based on price, duration, and personal preferences.
+- ⚡ **Fast Fetching:** Uses optimized data fetching and caching to deliver instant results and a seamless browsing experience.
+- 📈 **ML-Powered Price Forecasting:** Leverages machine learning to predict flight prices, so users can confidently plan and book at the right time.
 
-## Project Structure
+## 🖼️ Screenshots
+
+_Add screenshots of your application below. Place your images in the `Frontend/public` or a `screenshots/` folder and reference them here:_
+
+![Homepage](./screenshots/homepage.png)
+![Prediction Result](./screenshots/prediction.png)
+
+## 📁 Project Structure
 
 ```
 ├── Data/
@@ -43,13 +50,13 @@ JetLens addresses several key challenges in the flight search and booking domain
 └── .gitignore
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Python 3.6+
-- Node.js (v16+ recommended)
-- npm or pnpm
+- 🐍 Python 3.6+
+- 🟩 Node.js (v16+ recommended)
+- 📦 npm or pnpm
 
 ### Installation
 
@@ -90,16 +97,16 @@ You can use the provided batch script to start both services:
 ./run.bat
 ```
 
-## Usage
+## 🧑‍💻 Usage
 
 - ML API: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 - Frontend: [http://localhost:3000](http://localhost:3000)
 
-## Deployment
+## 🚢 Deployment
 
 See [Modeling/README.md](Modeling/README.md) for deployment instructions, including Heroku setup.
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
