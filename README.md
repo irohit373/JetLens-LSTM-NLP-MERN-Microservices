@@ -1,136 +1,108 @@
-# JetLens: NLP-Powered Microservices Platform
+# JetLens
 
-JetLens is an advanced natural language processing platform built with LSTM neural networks on a MERN stack architecture using microservices design principles.
+JetLens is a full-stack application for predicting flight prices using machine learning. It features a Python-based backend for ML inference and a Next.js frontend for user interaction.
 
-## 📋 Overview
+## Features
 
-JetLens leverages deep learning techniques to provide powerful NLP capabilities through a scalable microservices architecture. The platform uses LSTM (Long Short-Term Memory) neural networks to process and analyze text data for applications like sentiment analysis, text classification, and language generation.
+- Predicts flight prices using a trained ML model
+- REST API built with Python (Flask)
+- Modern frontend built with Next.js and Tailwind CSS
+- Logging and error handling
+- Easy local development with batch scripts
 
-## 🏗️ Architecture
+## Problems Solved
 
-JetLens follows a microservices architecture with the following components:
+JetLens addresses several key challenges in the flight search and booking domain:
 
-- **Frontend Service**: React-based user interface
-- **API Gateway**: Node.js/Express service for routing requests
-- **Authentication Service**: Handles user authentication and authorization
-- **NLP Processing Service**: Core LSTM model implementation and inference
-- **Training Service**: For model training and fine-tuning
-- **Database Service**: MongoDB for data storage
-- **Logging & Monitoring**: For system observability
+- **Search Airport Optimization:** Efficiently searches and filters airports from large datasets, providing fast and relevant suggestions to users.
+- **Flight Score Recommendation:** Ranks and recommends flights based on a combination of price, duration, and user preferences, helping users make informed decisions.
+- **Fast Fetching:** Implements optimized data fetching and caching strategies to ensure quick responses and a smooth user experience.
+- **ML-Powered Price Forecasting:** Utilizes machine learning models to accurately predict flight prices, enabling users to find the best deals and plan their trips with confidence.
 
-## 🛠️ Technologies
+## Project Structure
 
-- **Frontend**: React, Redux, Material-UI
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **ML Framework**: TensorFlow/PyTorch
-- **NLP**: LSTM neural networks
-- **Containerization**: Docker, Kubernetes
-- **CI/CD**: GitHub Actions
-- **Cloud Infrastructure**: AWS/GCP
+```
+├── Data/
+│   ├── airports.json
+│   ├── fetchAirports.py
+│   └── sampleApiResponse.json
+├── Frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── ...
+├── Modeling/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── ...
+├── logs/
+├── run.bat
+├── start_api.bat
+├── README.md
+├── LICENSE
+└── .gitignore
+```
 
-## ✨ Features
-
-- **Text Classification**: Categorize text into predefined categories
-- **Sentiment Analysis**: Determine sentiment polarity from text
-- **Named Entity Recognition**: Extract entities from text
-- **Language Generation**: Create human-like text responses
-- **Custom Model Training**: Train models on your specific data
-- **RESTful API**: Access all NLP capabilities programmatically
-- **Real-time Processing**: Process text data in real-time
-- **Scalable Architecture**: Handle varying workloads efficiently
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14+)
-- MongoDB (v4+)
-- Docker & Docker Compose
-- Python 3.8+ (for ML components)
+- Python 3.6+
+- Node.js (v16+ recommended)
+- npm or pnpm
 
 ### Installation
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/JetLens-LSTM-NLP-MERN-Microservices.git
-   cd JetLens-LSTM-NLP-MERN-Microservices
-   ```
+#### Backend (ML API)
 
+1. Navigate to the `Modeling` directory:
+    ```sh
+    cd Modeling
+    ```
 2. Install dependencies:
-   ```
-   # Install backend dependencies
-   cd services/api-gateway && npm install
-   cd ../auth-service && npm install
-   cd ../nlp-service && pip install -r requirements.txt
-   
-   # Install frontend dependencies
-   cd ../../client && npm install
-   ```
+    ```sh
+    pip install -r requirements.txt
+    ```
+3. Start the API:
+    ```sh
+    python -m app
+    ```
 
-3. Set up environment variables:
-   ```
-   cp .env.example .env
-   # Edit .env file with your configuration
-   ```
+#### Frontend
 
-4. Start services with Docker Compose:
-   ```
-   docker-compose up
-   ```
+1. Navigate to the `Frontend` directory:
+    ```sh
+    cd Frontend
+    ```
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+3. Start the frontend:
+    ```sh
+    npm start
+    ```
 
-5. Access the application at `http://localhost:3000`
+#### All-in-One
 
-### Running in Development Mode
-
-```
-# Start backend services
-npm run dev:services
-
-# Start frontend
-cd client && npm start
+You can use the provided batch script to start both services:
+```sh
+./run.bat
 ```
 
-## 📊 API Documentation
+## Usage
 
-API documentation is available at `http://localhost:8080/api-docs` when the application is running.
+- ML API: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+- Frontend: [http://localhost:3000](http://localhost:3000)
 
-### Example API Endpoints
+## Deployment
 
-- **POST /api/nlp/classify**: Text classification
-- **POST /api/nlp/sentiment**: Sentiment analysis
-- **POST /api/nlp/ner**: Named entity recognition
-- **POST /api/nlp/generate**: Text generation
+See [Modeling/README.md](Modeling/README.md) for deployment instructions, including Heroku setup.
 
-## 📚 Usage Examples
+## License
 
-### Text Classification
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-```javascript
-const response = await fetch('http://localhost:8080/api/nlp/classify', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ text: 'This product works amazingly well!' })
-});
+---
 
-const data = await response.json();
-// Output: { category: 'product_review', confidence: 0.95 }
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-For questions or support, please open an issue or contact the project maintainers.
+**Made with ❤️ by Rohit Deshmukh**
